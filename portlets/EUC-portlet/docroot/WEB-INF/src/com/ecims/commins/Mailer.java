@@ -52,11 +52,11 @@ public class Mailer
 	
 //	String FROM_EMAIL = "etax@probasegroup.com"; 
 //	String FROM_PASSWORD = "liverppolmlp-MLP_"; 
-	private String FROM_EMAIL = "etax@stanbic.com"; 
-	private String FROM_PASSWORD = "St@nbic1";
+	private String FROM_EMAIL = "FROM_EMAIL"; 
+	private String FROM_PASSWORD = "FROM_PASSWORD";
 
 	private int PORT = 465; //465;25
-	private String SENDER_USERNAME = "etax@probasegroup.com";
+	private String SENDER_USERNAME = "SENDER_USERNAME";
 	SwpService sservice = ServiceLocator.getInstance().getSwpService();
 
 	Logger log = Logger.getLogger(Mailer.class);

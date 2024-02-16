@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+#parse ($init)
+
+<html class="#language("lang.dir")" dir="#language("lang.dir")" lang="$w3c_language_id"><head>
+	<title>$the_title - $company_name</title>
+
+	$theme.include($top_head_include)
+	
+
+<link rel="stylesheet" href="/resources/css/bootstrap.css">
+	<link rel="stylesheet" href="/resources/css/actnow.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="/resources/js/bootstrap.min.js"></script>
+</head>
+
+<body class="$css_class">
+
+$theme.include($body_top_include)
+
+#if (($is_signed_in) && $permissionChecker.isCompanyAdmin($company_id))
+	#dockbar()
+#end
+<center>
+	<div id="wrapper" style="width:960px; text-align:left">
+		<a href="#main-content" id="skip-to-content">#language("skip-to-content")</a>
+	
+		<header id="banner" role="banner" style="960px">
+			
+				<img alt="top layer image" src="/resources/images/standardchartered/toplayer1.png" width="960" />
+			
+			<div id="heading" style="width:960px; text-align:left">
+				<div style="float:left">
+					<a class="$logo_css_class" href="$site_default_url" title="#language("go-to") $site_name">
+						<img style="border:0px;" src="/resources/images/standardchartered/logo3.png" alt="$logo_description" width="216" height="54" />					</a>				</div>
+				<div style="float:right">
+					<a class="$logo_css_class" href="$site_default_url" title="#language("go-to") $site_name">
+						<img style="border:0px;" alt="$logo_description" src="/resources/images/standardchartered/logo2.png" />
+					</a>
+				</div>
+				<div style="clear:both; font-size:1px; height:1px;">&nbsp;</div>
+			</div>
+			
+			
+		</header>
+	
+		<div id="content" style="width:960px; text-align:left">
+			#if ($selectable)
+					$theme.include($content_include)
+			#else
+				$portletDisplay.recycle()
+	
+				$portletDisplay.setTitle($the_title)
+	
+				$theme.wrapPortlet("portlet.vm", $content_include)
+			#end
+		</div>
+		<center>
+			<div style="width:960px; text-align:left; padding-top:10px; border-top:#cccccc 2px solid;">
+				<form name="_lang">Language Preference :  
+				<select name="langid" onchange="javascript:cl();">
+					 <option value="en" selected="">English</option>
+				</select>
+				<input type="hidden" name="_rdurl"></form>
+			</div>
+		</center>
+		<footer id="footer" role="contentinfo" style="">
+			<center>
+				<div style="width:960px; text-align:right">
+					<p class="powered-by">
+						<strong>#language("powered-by") <a href="http://www.probasegroup.com" rel="external">Probase</a></strong>
+					</p>
+				</div>
+			</center>
+		</footer>
+	</div>
+</center>
+$theme.include($body_bottom_include)
+
+</body>
+
+$theme.include($bottom_include)
+
+</html>

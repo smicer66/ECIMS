@@ -1,0 +1,36 @@
+<div>
+	<div style="float:left">
+	<img src="http://localhost:8082/resources/images/stanbiclogo.png" />
+	</div>
+	<div style="float: right; padding-top:20px;">
+		<h2>e-Tax System</h2>
+	</div>
+	<div style="clear:both">
+		<p>Hi $firstname$ $lastname$,
+		  <br />
+		  <br />
+	  A new e-Tax account has been created for you as a $userclass$<br />
+	  You may proceed to log into Stanbic's e-Tax portal to administer yout company's tax assessments. <br />
+	  Log into the portal by visiting <a href="$systemUrl$">$systemUrl$</a><br />
+	  For help on administering your company's tax assessments, visit <a href="$systemUrl$/etaxhelp">$systemUrl$/etaxhelp</a><br />
+	  <br />
+	  Your login details are listed below<br />
+	  <br />
+	  <strong>Email/Username:</strong> $username$<br />
+	  <strong>Password:</strong> $password$
+	  <br />
+	      <br />
+		  
+		  Thank you,<br /> 
+		  <br />
+		  <span style="color:#003300">
+	      Stanbic IBTC eTax Unit	      </span>
+		  <br />
+		  <br />
+		  <br />
+		  <span style="font-size:12px">This e-mail and any file attachments transmitted with it are intended solely for the addressee(s) and may be
+		    legally privileged and/or confidential. If you have received this e-mail in error please destroy it.
+		    If you are not the addressee you may not disclose, copy, distribute or take any action based on the contents hereof. 
+	      Any unauthorized use or disclosure is  prohibited and may be unlawful.</span>      </p>
+	</div>
+</div>

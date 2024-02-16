@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+#parse ($init)
+#set ($dateFormat = "dd MMM yyyy HH:mm a")
+#set ($timeZone = $timeZoneUtil.getTimeZone("IST"))
+#set ($user_roles = $user.getRoles())
+#set ($user_roles = $user.getRoles())
+#set ($role=$serviceLocator.findService("com.liferay.portal.service.RoleLocalService"))
+#set ($userLocalService1 = $serviceLocator.findService("com.liferay.portal.service.UserLocalService"))
+#set ($flag=0)
+
+
+<html class="#language("lang.dir")" dir="#language("lang.dir")" lang="$w3c_language_id">
+
+<head>
+	<title>$the_title - $company_name</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+	$theme.include($top_head_include)
+	<link href="//www.google-analytics.com" rel="dns-prefetch">
+    <link href="//ajax.googleapis.com" rel="dns-prefetch">
+    <link href="/resources/css/kelvin/framework.css" rel="stylesheet">
+    <link href="/resources/css/kelvin/fonts.css" rel="stylesheet">
+    <link href="/resources/css/kelvin/default.css" rel="stylesheet">
+    <link href="/resources/css/kelvin/style.css" rel="stylesheet">
+    
+    <!-- Fotorama -->
+    <link href="/resources/css/kelvin/fotorama.css" rel="stylesheet"> 
+
+<style type="text/css">
+  .fotorama__wrap--css3 .fotorama__stage__shaft, .fotorama__wrap--css3 .fotorama__nav__shaft, .fotorama__wrap--css3 .fotorama__thumb-border {
+    -webkit-transition-property: -webkit-transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: cubic-bezier(0.5, -0.5, 0.5, 1.5);
+    transition-timing-function: cubic-bezier(0.5, -0.5, 0.5, 1.5);
+    -webkit-transition-duration: 0ms;
+    transition-duration: 0ms;
+    }
+
+.fotorama__caption__wrap {
+  background-color: rgba(255,255,255,.0);
+  padding: 0 0px 3% 20px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  font-size: 26px;
+  color: rgba(1, 152, 11, .94);
+}
+
+.navbar-left {
+float: right!important;
+}
+
+
+.page-title{
+	margin-left: 50px;
+	margin-top: -20px;
+}
+
+#feedback { 
+  height: 104px; 
+  width: 104px; 
+  position: fixed; 
+  top: 40%; 
+  z-index: 999;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg); 
+  -moz-transform: rotate(-90deg); 
+  -o-transform: rotate(-90deg); 
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+#feedback a { 
+  display: block; 
+  background: #f00; 
+  height: 55px; 
+  width: 140px; 
+  padding: 8px 16px;
+  color: #fff; 
+  font-family: Arial, sans-serif; 
+  font-size: 17px; 
+  font-weight: bold; 
+  text-decoration: none; 
+  border-bottom: solid 1px #333;
+  border-left: solid 1px #333;
+  border-right: solid 1px #fff;
+}
+
+#feedback a:hover { 
+  background: #06c; 
+}
+
+</style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/resources/js/modernizr/modernizr.js"></script>
+	<script src="/resources/js/print_nsa.js?x=1"></script>
+</head>
+
+<body role="homepage">
+
+$theme.include($body_top_include)
+
+#if (($is_signed_in) && $permissionChecker.isCompanyAdmin($company_id))
+	#dockbar()
+#end
+<div id="feedback">
+  <a href="/web/guest/contact">ECIMS HELP</a>
+</div>
+
+<div id="wrapper">
+	<span class="liner">
+	  <div class="container">Powered By Office of the National Security Adviser of Nigeria</div>
+	</span>
+
+	<a href="#main-content" id="skip-to-content">#language("skip-to-content")</a>
+
+	<nav class="navbar navbar-default navbar-static-top" role="navigation">
+	    <div class="container">
+	       <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button><div style="float:left">
+	      <a class="navbar-brand" href="$site_default_url" title="#language("go-to") $site_name">
+				<img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width" />
+			</a>
+		  </div>
+		  <div style="float:left">
+			<h2 class="page-title">
+				<div style="white-space: nowrap; overflow:hidden; color: white; font-size: 28px; margin-left:-40px;padding-top:30px; margin-top:20px; padding-bottom:10px">End-User Certificate Issuance & Management System</div>
+			</h2>
+		  </div>
+		  <div style="clear:both">&nbsp;</div>
+	    </div>
+	
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        
+	      </ul>
+	      
+	      <ul class="nav navbar-nav navbar-left">
+	        <li class="dropdown">
+	        
+	        #if ($is_signed_in)
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hi $user_first_name <span class="caret"></span></a>
+	        #end
+	        #if (!$is_signed_in)
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <span class="caret"></span></a>
+	        #end
+	          <ul class="dropdown-menu" role="menu">
+	            <li class="active"><a href="/">ECIMS</a></li>
+	            <li><a href="/web/guest/guidelines">Guidelines</a></li>
+	            <li><a href="/web/guest/contact">Help/Support</a></li>
+	            <li><a href="/web/guest/feedback">Feedback Form</a></li>
+	            #if($userLocalService1.hasGroupUser(10462, $user_id))
+	            	<li><a href="/web/accreditor/home">My Dashboard</a></li>
+	            #elseif($userLocalService1.hasGroupUser(10508, $user_id))
+	            	<li><a href="/web/end-user/home">My Dashboard</a></li>
+	            #elseif($userLocalService1.hasGroupUser(10534, $user_id))
+	            	<li><a href="/web/information-user/home">My Dashboard</a></li>
+	            #elseif($userLocalService1.hasGroupUser(10560, $user_id))
+	            	<li><a href="/web/nsa-admin/home">My Dashboard</a></li>
+	            #elseif($userLocalService1.hasGroupUser(10586, $user_id))
+	            	<li><a href="/web/nsa-user/home">My Dashboard</a></li>
+	            #elseif($userLocalService1.hasGroupUser(10612, $user_id))
+	            	<li><a href="/web/regulator-user/home">My Dashboard</a></li>
+	            #elseif($userLocalService1.hasGroupUser(10638, $user_id))
+	            	<li><a href="/web/system-admin/home">My Dashboard</a></li>
+	            #elseif($userLocalService1.hasGroupUser(31301, $user_id))
+	            	<li><a href="/web/exclusive/home">My Dashboard</a></li>
+	            #end
+				
+#if (!$is_signed_in)
+	<li><a href="/web/guest/signin">Login</a></li>
+#end
+#if ($is_signed_in)
+	
+	<li><a href="$sign_out_url" id="signin" rel="nofollow">Sign Out</a></li>
+#end
+#if (!$is_signed_in)
+	            <li><a href="/web/guest/new-ecims-account">Signup</a></li>
+#end
+	          </ul>
+	        </li>
+	      </ul>
+	
+	      <div class="navbar-brand  navbar-right"> 
+	        <img src="/resources/images/coat.png" width="100">
+	      </div>
+	
+	    </div><!-- /.navbar-collapse -->
+	    </div>
+  </nav>
+  
+<!--<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+  <div class="modal-dialog">
+    <div class="modal-content">
+     
+      <div class="modal-body">
+        
+
+         <div class="fotorama" data-width="100%" data-height="100%" data-max-height="360" data-loop="true" data-max-width="100%" data-fit="cover" data-transition="slide" data-clicktransition="slide" data-autoplay="true" data-nav="false" data-transitionduration="1200">
+
+          <img src="/resources/images/11.jpg" >
+          <img src="/resources/images/banner2.jpg" >
+          <img src="/resources/images/banner3.jpg" >
+          <img src="/resources/images/banner4.jpeg" >
+          <img src="/resources/images/banner2.png" data-caption="Caption Image">
+        </div>       
+
+
+      </div>
+    
+<div class="modal-footer" style="text-align: center;">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Skip to login</button>
+      </div>
+
+    </div>
+  </div>
+</div>  -->
+  
+
+<section class="container">
+  <nav class="site-breadcrumbs" id="breadcrumbs">
+  	<h1>
+		<span>#language("breadcrumbs")</span>
+	</h1>
+	#breadcrumbs()
+  </nav>
+</section>
+
+
+<section class="container">
+  <!-- header section with 3 columns --> 
+    <div id="content">
+		#if ($selectable)
+				$theme.include($content_include)
+		#else
+			$portletDisplay.recycle()
+
+			$portletDisplay.setTitle($the_title)
+
+			$theme.wrapPortlet("portlet.vm", $content_include)
+		#end
+	</div>
+</section>
+
+  
+  
+  
+  
+
+	
+
+	<footer id="footer" role="contentinfo">
+		<div class="container">
+        <div class="col-sm-12 col-xs-12 text-center">
+          <ul>
+            <li>ECIMS</li>
+            <!--<li><a href="/">Home</a></li>
+            <li><a href="#">Site Map</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>-->
+            <li><a href="/web/guest/home">Home</a></li>
+            <li><a href="/web/guest/terms-of-use">Terms of Use</a></li>
+            <li><a href="/web/guest/privacy-policy">Privacy Policy</a></li>
+            
+            </ul>Copyright &#64 2015 Powered By Office of The National Security Adviser.
+          </div>
+
+      </div>
+	</footer>
+</div>
+
+$theme.include($body_bottom_include)
+
+<script src="/resources/js/jquery/jquery.min.js"></script>
+    <script src="/resources/js/framework.js"></script>
+    <script src="/resources/js/scripts.min.js"></script>
+     <script src="/resources/js/fotorama.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+      setTimeout(function() {
+        $('#myModal').modal('show');
+        }, 1300);
+    });
+</script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+</body>
+
+$theme.include($bottom_include)
+
+</html>

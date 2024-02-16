@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE display PUBLIC "-//Liferay//DTD Display 6.1.0//EN" "http://www.liferay.com/dtd/liferay-display_6_1_0.dtd">
+
+<display>
+	<category name="category.sample">
+		<portlet id="EUC" />
+		<portlet id="applicant portlet"></portlet>
+		<portlet id="usermanagement portlet"></portlet>
+		<portlet id="guestportlet"></portlet>
+		<portlet id="application management portlet"></portlet>
+		<portlet id="certificate management portlet"></portlet>
+		<portlet id="dashboardportlet"></portlet>
+		<portlet id="currencymanagementportlet"></portlet>
+		<portlet id="agency management portlet"></portlet>
+		<portlet id="audittrailportlet"></portlet>
+		<portlet id="track application portlet"></portlet>
+		<portlet id="application attachment management"></portlet>
+		<portlet id="item category portlet"></portlet>
+		<portlet id="applicationautoprocessportlet"></portlet>
+		<portlet id="country state portlet"></portlet>
+		<portlet id="recoverpasswordportlet"></portlet>
+		<portlet id="moneymgmtportlet"></portlet>
+		<portlet id="portcodemgmtportlet"></portlet>
+		<portlet id="workflowconfigportlet"></portlet>
+		<portlet id="reportportlet"></portlet>
+		<portlet id="contactusportlet"></portlet>
+		<portlet id="feedbackportlet"></portlet>
+		<portlet id="blacklistportlet"></portlet>
+	</category>
+</display>

@@ -1,0 +1,51 @@
+#*
+This file allows you to override and define new Velocity variables.
+*#
+#set ($accEditorCummunityRole = 'Accreditor')
+#set ($euCummunityRole = 'End-User')
+#set ($infCummunityRole = 'Information User')
+#set ($nsaCummunityRole = 'NSA Admin')
+#set ($nsuCummunityRole = 'NSA User')
+#set ($regCummunityRole = 'Regulator User')
+#set ($sysCummunityRole = 'System Admin')
+#set ($accHasEditorCummunityRole = 'false')
+#set ($euHasCummunityRole = 'false')
+#set ($infHasCummunityRole = 'false')
+#set ($nsaHasCummunityRole = 'false')
+#set ($nsuHasCummunityRole = 'false')
+#set ($regHasCummunityRole = 'false')
+#set ($sysHasCummunityRole = 'false')
+#set ($dashboardurl = '')
+
+#set ($roleLocalService = $serviceLocator.findService("com.liferay.portal.service.RoleLocalService"))
+#set ($communityRolesforUser = $roleLocalService.getUserGroupRoles($user_id,$group_id))
+#foreach ($communityRoleforUser in $communityRolesforUser)
+         #if ($communityRoleforUser.getName() == $accEditorCummunityRole)
+               #set ($accHasEditorCummunityRole= 'true')
+               #set ($dashboardurl= 'web/accreditor/home')
+         #end
+         #if ($communityRoleforUser.getName() == $euCummunityRole)
+               #set ($euHasCummunityRole= 'true')
+               #set ($dashboardurl= 'web/end-user/home')
+         #end
+         #if ($communityRoleforUser.getName() == $infCummunityRole)
+               #set ($infHasCummunityRole= 'true')
+               #set ($dashboardurl= 'web/information-user/home')
+         #end
+         #if ($communityRoleforUser.getName() == $nsaCummunityRole)
+               #set ($nsaHasCummunityRole= 'true')
+               #set ($dashboardurl= 'web/nsa-admin/home')
+         #end
+         #if ($communityRoleforUser.getName() == $nsuCummunityRole)
+               #set ($nsuHasCummunityRole= 'true')
+               #set ($dashboardurl= 'web/nsa-user/home')
+         #end
+         #if ($communityRoleforUser.getName() == $regCummunityRole)
+               #set ($regHasCummunityRole= 'true')
+               #set ($dashboardurl= 'web/regulator-user/home')
+         #end
+         #if ($communityRoleforUser.getName() == $sysCummunityRole)
+               #set ($sysHasCummunityRole= 'true')
+               #set ($dashboardurl= 'web/system-admin/home')
+         #end
+#end

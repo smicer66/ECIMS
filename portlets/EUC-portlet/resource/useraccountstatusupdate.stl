@@ -1,0 +1,29 @@
+<div>
+	<div style="float:left">
+	<img src="http://localhost:8082/resources/images/stanbiclogo.png" />
+	</div>
+	<div style="float: right; padding-top:20px;">
+		<h2>e-Tax System</h2>
+	</div>
+	<div style="clear:both">
+		<p>Hi $firstname$ $lastname$,
+		  <br />
+		  <br />
+	  Your e-Tax account status has been updated.<br />
+	  Your account is now $status$.<br />
+	  Kindly contact your bank if you have any complaints.
+		  <br />
+		  <br />
+		  Thank you,<br /> 
+		  <br />
+		  <span style="color:#003300">
+	      Stanbic IBTC eTax Unit	      </span>
+		  <br />
+		  <br />
+		  <br />
+		  <span style="font-size:12px">This e-mail and any file attachments transmitted with it are intended solely for the addressee(s) and may be
+		    legally privileged and/or confidential. If you have received this e-mail in error please destroy it.
+		    If you are not the addressee you may not disclose, copy, distribute or take any action based on the contents hereof. 
+      Any unauthorized use or disclosure is  prohibited and may be unlawful.</span> </p>
+	</div>
+</div>

@@ -1,0 +1,3 @@
+
+<portlet:defineObjects />
+test2

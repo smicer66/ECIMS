@@ -1,0 +1,36 @@
+<nav class="navbar navbar-inverse" role="navigation">
+  <div class="container-fluid">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<ul class="nav navbar-nav">
+			#foreach ($nav_item in $nav_items)
+				#set ($menu_count_var = 1)
+				#set ($span_var = "menu_item" + $menu_count_var )
+				#if ($nav_item.isSelected())
+					<li class="active">
+				#else
+					<li>
+				#end
+					<a href="$nav_item.getURL()" $nav_item.getTarget()><span class="$span_var">$nav_item.icon() $nav_item.getName()</span></a>
+					#set ($menu_count_var = 1 + 1)
+	
+					#if ($nav_item.hasChildren())
+						<ul class="nav navbar-nav">
+							#foreach ($nav_child in $nav_item.getChildren())
+								#if ($nav_child.isSelected())
+									<li class="active">
+								#else
+									<li>
+								#end
+									<a href="$nav_child.getURL()" $nav_child.getTarget()>$nav_child.getName()</a>
+								</li>
+							#end
+						</ul>
+					#end
+					
+				</li>
+			#end		
+		</ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

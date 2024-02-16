@@ -1,0 +1,1133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yshrink version="0.1">
+<!-- parsing C:\jcodes\dev\appservers\ecims\lib\ext\Tidy.jar -->
+<entrypoints>
+	<class name="org.w3c.tidy.ParserImpl$ParseRow" />
+	<method signature="void parse(org.w3c.tidy.Lexer,org.w3c.tidy.Node,short)" class="org.w3c.tidy.ParserImpl$ParseRow" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.ParserImpl$ParseRow" />
+	<class name="org.w3c.tidy.ParserImpl$ParseOptGroup" />
+	<method signature="void parse(org.w3c.tidy.Lexer,org.w3c.tidy.Node,short)" class="org.w3c.tidy.ParserImpl$ParseOptGroup" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.ParserImpl$ParseOptGroup" />
+	<class name="org.w3c.tidy.CheckAttribsImpl$CheckSTYLE" />
+	<method signature="void check(org.w3c.tidy.Lexer,org.w3c.tidy.Node)" class="org.w3c.tidy.CheckAttribsImpl$CheckSTYLE" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.CheckAttribsImpl$CheckSTYLE" />
+	<class name="org.w3c.tidy.IStack" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.IStack" />
+	<field name="element" class="org.w3c.tidy.IStack" />
+	<field name="tag" class="org.w3c.tidy.IStack" />
+	<field name="next" class="org.w3c.tidy.IStack" />
+	<field name="attributes" class="org.w3c.tidy.IStack" />
+	<class name="org.w3c.tidy.MutableInteger" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.MutableInteger" />
+	<field name="value" class="org.w3c.tidy.MutableInteger" />
+	<class name="org.w3c.tidy.ParserImpl$ParseColGroup" />
+	<method signature="void parse(org.w3c.tidy.Lexer,org.w3c.tidy.Node,short)" class="org.w3c.tidy.ParserImpl$ParseColGroup" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.ParserImpl$ParseColGroup" />
+	<class name="org.w3c.tidy.Clean" />
+	<method signature="void nestedEmphasis(org.w3c.tidy.Node)" class="org.w3c.tidy.Clean" />
+	<method signature="org.w3c.tidy.Node pruneSection(org.w3c.tidy.Lexer,org.w3c.tidy.Node)" class="org.w3c.tidy.Clean" />
+	<method signature="void cleanTree(org.w3c.tidy.Lexer,org.w3c.tidy.Node)" class="org.w3c.tidy.Clean" />
+	<method signature="void purgeAttributes(org.w3c.tidy.Node)" class="org.w3c.tidy.Clean" />
+	<method signature="void bQ2Div(org.w3c.tidy.Node)" class="org.w3c.tidy.Clean" />
+	<method signature="void dropSections(org.w3c.tidy.Lexer,org.w3c.tidy.Node)" class="org.w3c.tidy.Clean" />
+	<method signature="boolean isWord2000(org.w3c.tidy.Node,org.w3c.tidy.TagTable)" class="org.w3c.tidy.Clean" />
+	<method signature="void &lt;init&gt;(org.w3c.tidy.TagTable)" class="org.w3c.tidy.Clean" />
+	<method signature="void list2BQ(org.w3c.tidy.Node)" class="org.w3c.tidy.Clean" />
+	<method signature="void cleanWord2000(org.w3c.tidy.Lexer,org.w3c.tidy.Node)" class="org.w3c.tidy.Clean" />
+	<method signature="org.w3c.tidy.Node stripSpan(org.w3c.tidy.Lexer,org.w3c.tidy.Node)" class="org.w3c.tidy.Clean" />
+	<method signature="void emFromI(org.w3c.tidy.Node)" class="org.w3c.tidy.Clean" />
+	<class name="org.w3c.tidy.Entity" />
+	<method signature="void &lt;init&gt;(java.lang.String,short)" class="org.w3c.tidy.Entity" />
+	<method signature="void &lt;init&gt;(java.lang.String,int)" class="org.w3c.tidy.Entity" />
+	<field name="name" class="org.w3c.tidy.Entity" />
+	<field name="code" class="org.w3c.tidy.Entity" />
+	<class name="org.w3c.tidy.ParserImpl$ParseHead" />
+	<method signature="void parse(org.w3c.tidy.Lexer,org.w3c.tidy.Node,short)" class="org.w3c.tidy.ParserImpl$ParseHead" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.ParserImpl$ParseHead" />
+	<class name="org.w3c.tidy.ParserImpl$ParseList" />
+	<method signature="void parse(org.w3c.tidy.Lexer,org.w3c.tidy.Node,short)" class="org.w3c.tidy.ParserImpl$ParseList" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.ParserImpl$ParseList" />
+	<class name="org.w3c.tidy.Style" />
+	<method signature="void &lt;init&gt;(java.lang.String,java.lang.String,java.lang.String)" class="org.w3c.tidy.Style" />
+	<method signature="void &lt;init&gt;(java.lang.String,java.lang.String,java.lang.String,org.w3c.tidy.Style)" class="org.w3c.tidy.Style" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.Style" />
+	<field name="tag" class="org.w3c.tidy.Style" />
+	<field name="next" class="org.w3c.tidy.Style" />
+	<field name="properties" class="org.w3c.tidy.Style" />
+	<field name="tagClass" class="org.w3c.tidy.Style" />
+	<class name="org.w3c.tidy.CheckAttribsImpl" />
+	<method signature="org.w3c.tidy.CheckAttribs getCheckTABLE()" class="org.w3c.tidy.CheckAttribsImpl" />
+	<method signature="org.w3c.tidy.CheckAttribs getCheckHTML()" class="org.w3c.tidy.CheckAttribsImpl" />
+	<method signature="org.w3c.tidy.CheckAttribs getCheckCaption()" class="org.w3c.tidy.CheckAttribsImpl" />
+	<method signature="org.w3c.tidy.CheckAttribs getCheckAnchor()" class="org.w3c.tidy.CheckAttribsImpl" />
+	<method signature="org.w3c.tidy.CheckAttribs getCheckLINK()" class="org.w3c.tidy.CheckAttribsImpl" />
+	<method signature="org.w3c.tidy.CheckAttribs getCheckAREA()" class="org.w3c.tidy.CheckAttribsImpl" />
+	<method signature="org.w3c.tidy.CheckAttribs getCheckTableCell()" class="org.w3c.tidy.CheckAttribsImpl" />
+	<method signature="org.w3c.tidy.CheckAttribs getCheckHR()" class="org.w3c.tidy.CheckAttribsImpl" />
+	<method signature="org.w3c.tidy.CheckAttribs getCheckSTYLE()" class="org.w3c.tidy.CheckAttribsImpl" />
+	<method signature="org.w3c.tidy.CheckAttribs getCheckSCRIPT()" class="org.w3c.tidy.CheckAttribsImpl" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.CheckAttribsImpl" />
+	<method signature="org.w3c.tidy.CheckAttribs getCheckMap()" class="org.w3c.tidy.CheckAttribsImpl" />
+	<method signature="org.w3c.tidy.CheckAttribs getCheckIMG()" class="org.w3c.tidy.CheckAttribsImpl" />
+	<class name="org.w3c.tidy.DOMDocumentTypeImpl" />
+	<method signature="org.w3c.dom.NamedNodeMap getNotations()" class="org.w3c.tidy.DOMDocumentTypeImpl" />
+	<method signature="void &lt;init&gt;(org.w3c.tidy.Node)" class="org.w3c.tidy.DOMDocumentTypeImpl" />
+	<method signature="java.lang.String getInternalSubset()" class="org.w3c.tidy.DOMDocumentTypeImpl" />
+	<method signature="java.lang.String getSystemId()" class="org.w3c.tidy.DOMDocumentTypeImpl" />
+	<method signature="java.lang.String getPublicId()" class="org.w3c.tidy.DOMDocumentTypeImpl" />
+	<method signature="java.lang.String getNodeName()" class="org.w3c.tidy.DOMDocumentTypeImpl" />
+	<method signature="java.lang.String getName()" class="org.w3c.tidy.DOMDocumentTypeImpl" />
+	<method signature="short getNodeType()" class="org.w3c.tidy.DOMDocumentTypeImpl" />
+	<method signature="org.w3c.dom.NamedNodeMap getEntities()" class="org.w3c.tidy.DOMDocumentTypeImpl" />
+	<class name="org.w3c.tidy.DOMNodeListByTagNameImpl" />
+	<method signature="org.w3c.dom.Node item(int)" class="org.w3c.tidy.DOMNodeListByTagNameImpl" />
+	<method signature="void preTraverse(org.w3c.tidy.Node)" class="org.w3c.tidy.DOMNodeListByTagNameImpl" />
+	<method signature="void &lt;init&gt;(org.w3c.tidy.Node,java.lang.String)" class="org.w3c.tidy.DOMNodeListByTagNameImpl" />
+	<method signature="int getLength()" class="org.w3c.tidy.DOMNodeListByTagNameImpl" />
+	<class name="org.w3c.tidy.Report" />
+	<method signature="void unknownOption(java.io.PrintWriter,char)" class="org.w3c.tidy.Report" />
+	<method signature="void unknownFile(java.io.PrintWriter,java.lang.String,java.lang.String)" class="org.w3c.tidy.Report" />
+	<method signature="void error(org.w3c.tidy.Lexer,org.w3c.tidy.Node,org.w3c.tidy.Node,short)" class="org.w3c.tidy.Report" />
+	<method signature="void entityError(org.w3c.tidy.Lexer,short,java.lang.String,int)" class="org.w3c.tidy.Report" />
+	<method signature="void reportVersion(java.io.PrintWriter,org.w3c.tidy.Lexer,java.lang.String,org.w3c.tidy.Node)" class="org.w3c.tidy.Report" />
+	<method signature="void needsAuthorIntervention(java.io.PrintWriter)" class="org.w3c.tidy.Report" />
+	<method signature="void errorSummary(org.w3c.tidy.Lexer)" class="org.w3c.tidy.Report" />
+	<method signature="void showVersion(java.io.PrintWriter)" class="org.w3c.tidy.Report" />
+	<method signature="void warning(org.w3c.tidy.Lexer,org.w3c.tidy.Node,org.w3c.tidy.Node,short)" class="org.w3c.tidy.Report" />
+	<method signature="void badArgument(java.lang.String)" class="org.w3c.tidy.Report" />
+	<method signature="void missingBody(java.io.PrintWriter)" class="org.w3c.tidy.Report" />
+	<method signature="void generalInfo(java.io.PrintWriter)" class="org.w3c.tidy.Report" />
+	<method signature="void encodingError(org.w3c.tidy.Lexer,short,int)" class="org.w3c.tidy.Report" />
+	<method signature="void badTree(java.io.PrintWriter)" class="org.w3c.tidy.Report" />
+	<method signature="void position(org.w3c.tidy.Lexer)" class="org.w3c.tidy.Report" />
+	<method signature="void reportNumberOfSlides(java.io.PrintWriter,int)" class="org.w3c.tidy.Report" />
+	<method signature="void tidyPrint(java.io.PrintWriter,java.lang.String)" class="org.w3c.tidy.Report" />
+	<method signature="void tag(org.w3c.tidy.Lexer,org.w3c.tidy.Node)" class="org.w3c.tidy.Report" />
+	<method signature="void attrError(org.w3c.tidy.Lexer,org.w3c.tidy.Node,java.lang.String,short)" class="org.w3c.tidy.Report" />
+	<method signature="void tidyPrintln(java.io.PrintWriter,java.lang.String)" class="org.w3c.tidy.Report" />
+	<method signature="void tidyPrintln(java.io.PrintWriter)" class="org.w3c.tidy.Report" />
+	<method signature="void reportNumWarnings(java.io.PrintWriter,org.w3c.tidy.Lexer)" class="org.w3c.tidy.Report" />
+	<method signature="void helpText(java.io.PrintWriter,java.lang.String)" class="org.w3c.tidy.Report" />
+	<method signature="void helloMessage(java.io.PrintWriter,java.lang.String,java.lang.String)" class="org.w3c.tidy.Report" />
+	<method signature="void unknownOption(java.lang.String)" class="org.w3c.tidy.Report" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.Report" />
+	<field name="MISSING_STARTTAG" class="org.w3c.tidy.Report" />
+	<field name="INCONSISTENT_NAMESPACE" class="org.w3c.tidy.Report" />
+	<field name="INSERTING_TAG" class="org.w3c.tidy.Report" />
+	<field name="ID_NAME_MISMATCH" class="org.w3c.tidy.Report" />
+	<field name="UNKNOWN_ELEMENT" class="org.w3c.tidy.Report" />
+	<field name="PROPRIETARY_ATTR_VALUE" class="org.w3c.tidy.Report" />
+	<field name="MISSING_IMAGEMAP" class="org.w3c.tidy.Report" />
+	<field name="USING_FONT" class="org.w3c.tidy.Report" />
+	<field name="ACCESS_URL" class="org.w3c.tidy.Report" />
+	<field name="RELEASE_DATE" class="org.w3c.tidy.Report" />
+	<field name="COERCE_TO_ENDTAG" class="org.w3c.tidy.Report" />
+	<field name="UNESCAPED_AMPERSAND" class="org.w3c.tidy.Report" />
+	<field name="CANT_BE_NESTED" class="org.w3c.tidy.Report" />
+	<field name="NON_ASCII" class="org.w3c.tidy.Report" />
+	<field name="BAD_COMMENT_CHARS" class="org.w3c.tidy.Report" />
+	<field name="TAG_NOT_ALLOWED_IN" class="org.w3c.tidy.Report" />
+	<field name="WINDOWS_CHARS" class="org.w3c.tidy.Report" />
+	<field name="USING_NOFRAMES" class="org.w3c.tidy.Report" />
+	<field name="MALFORMED_DOCTYPE" class="org.w3c.tidy.Report" />
+	<field name="BAD_ATTRIBUTE_VALUE" class="org.w3c.tidy.Report" />
+	<field name="UNKNOWN_ATTRIBUTE" class="org.w3c.tidy.Report" />
+	<field name="NON_MATCHING_ENDTAG" class="org.w3c.tidy.Report" />
+	<field name="CONTENT_AFTER_BODY" class="org.w3c.tidy.Report" />
+	<field name="USING_SPACER" class="org.w3c.tidy.Report" />
+	<field name="USING_LAYER" class="org.w3c.tidy.Report" />
+	<field name="MISSING_SUMMARY" class="org.w3c.tidy.Report" />
+	<field name="FOUND_UTF16" class="org.w3c.tidy.Report" />
+	<field name="UNEXPECTED_ENDTAG" class="org.w3c.tidy.Report" />
+	<field name="REPEATED_ATTRIBUTE" class="org.w3c.tidy.Report" />
+	<field name="DTYPE_NOT_UPPER_CASE" class="org.w3c.tidy.Report" />
+	<field name="TOO_MANY_ELEMENTS" class="org.w3c.tidy.Report" />
+	<field name="NESTED_EMPHASIS" class="org.w3c.tidy.Report" />
+	<field name="UNEXPECTED_END_OF_FILE" class="org.w3c.tidy.Report" />
+	<field name="TRIM_EMPTY_ELEMENT" class="org.w3c.tidy.Report" />
+	<field name="NOFRAMES_CONTENT" class="org.w3c.tidy.Report" />
+	<field name="SUSPECTED_MISSING_QUOTE" class="org.w3c.tidy.Report" />
+	<field name="BAD_XML_COMMENT" class="org.w3c.tidy.Report" />
+	<field name="USING_FRAMES" class="org.w3c.tidy.Report" />
+	<field name="MISSING_ENDTAG_FOR" class="org.w3c.tidy.Report" />
+	<field name="UNEXPECTED_QUOTEMARK" class="org.w3c.tidy.Report" />
+	<field name="DISCARDING_UNEXPECTED" class="org.w3c.tidy.Report" />
+	<field name="USING_NOBR" class="org.w3c.tidy.Report" />
+	<field name="OBSOLETE_ELEMENT" class="org.w3c.tidy.Report" />
+	<field name="DOCTYPE_AFTER_TAGS" class="org.w3c.tidy.Report" />
+	<field name="MISSING_IMAGE_MAP" class="org.w3c.tidy.Report" />
+	<field name="ILLEGAL_NESTING" class="org.w3c.tidy.Report" />
+	<field name="MISSING_TITLE_ELEMENT" class="org.w3c.tidy.Report" />
+	<field name="MISSING_ATTRIBUTE" class="org.w3c.tidy.Report" />
+	<field name="USING_BODY" class="org.w3c.tidy.Report" />
+	<field name="XML_ATTRIBUTE_VALUE" class="org.w3c.tidy.Report" />
+	<field name="INCONSISTENT_VERSION" class="org.w3c.tidy.Report" />
+	<field name="USING_BR_INPLACE_OF" class="org.w3c.tidy.Report" />
+	<field name="MISSING_ATTR_VALUE" class="org.w3c.tidy.Report" />
+	<field name="currentFile" class="org.w3c.tidy.Report" />
+	<field name="MALFORMED_COMMENT" class="org.w3c.tidy.Report" />
+	<field name="UNKNOWN_ENTITY" class="org.w3c.tidy.Report" />
+	<field name="UNEXPECTED_GT" class="org.w3c.tidy.Report" />
+	<field name="MISSING_LINK_ALT" class="org.w3c.tidy.Report" />
+	<field name="MISSING_IMAGE_ALT" class="org.w3c.tidy.Report" />
+	<field name="DUPLICATE_FRAMESET" class="org.w3c.tidy.Report" />
+	<field name="PROPRIETARY_ELEMENT" class="org.w3c.tidy.Report" />
+	<field name="MISSING_SEMICOLON" class="org.w3c.tidy.Report" />
+	<field name="MISSING_ENDTAG_BEFORE" class="org.w3c.tidy.Report" />
+	<field name="BAD_CDATA_CONTENT" class="org.w3c.tidy.Report" />
+	<class name="org.w3c.tidy.Out" />
+	<method signature="void outc(byte)" class="org.w3c.tidy.Out" />
+	<method signature="void outc(int)" class="org.w3c.tidy.Out" />
+	<method signature="void newline()" class="org.w3c.tidy.Out" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.Out" />
+	<field name="state" class="org.w3c.tidy.Out" />
+	<field name="encoding" class="org.w3c.tidy.Out" />
+	<field name="out" class="org.w3c.tidy.Out" />
+	<class name="org.w3c.tidy.CheckAttribsImpl$CheckHR" />
+	<method signature="void check(org.w3c.tidy.Lexer,org.w3c.tidy.Node)" class="org.w3c.tidy.CheckAttribsImpl$CheckHR" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.CheckAttribsImpl$CheckHR" />
+	<class name="org.w3c.tidy.DOMAttrMapImpl" />
+	<method signature="org.w3c.dom.Node setNamedItem(org.w3c.dom.Node)" class="org.w3c.tidy.DOMAttrMapImpl" />
+	<method signature="org.w3c.dom.Node getNamedItem(java.lang.String)" class="org.w3c.tidy.DOMAttrMapImpl" />
+	<method signature="org.w3c.dom.Node item(int)" class="org.w3c.tidy.DOMAttrMapImpl" />
+	<method signature="org.w3c.dom.Node removeNamedItemNS(java.lang.String,java.lang.String)" class="org.w3c.tidy.DOMAttrMapImpl" />
+	<method signature="void &lt;init&gt;(org.w3c.tidy.AttVal)" class="org.w3c.tidy.DOMAttrMapImpl" />
+	<method signature="org.w3c.dom.Node getNamedItemNS(java.lang.String,java.lang.String)" class="org.w3c.tidy.DOMAttrMapImpl" />
+	<method signature="int getLength()" class="org.w3c.tidy.DOMAttrMapImpl" />
+	<method signature="org.w3c.dom.Node removeNamedItem(java.lang.String)" class="org.w3c.tidy.DOMAttrMapImpl" />
+	<method signature="org.w3c.dom.Node setNamedItemNS(org.w3c.dom.Node)" class="org.w3c.tidy.DOMAttrMapImpl" />
+	<class name="org.w3c.tidy.ParserImpl$ParseTitle" />
+	<method signature="void parse(org.w3c.tidy.Lexer,org.w3c.tidy.Node,short)" class="org.w3c.tidy.ParserImpl$ParseTitle" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.ParserImpl$ParseTitle" />
+	<class name="org.w3c.tidy.DOMCharacterDataImpl" />
+	<method signature="void &lt;init&gt;(org.w3c.tidy.Node)" class="org.w3c.tidy.DOMCharacterDataImpl" />
+	<method signature="void replaceData(int,int,java.lang.String)" class="org.w3c.tidy.DOMCharacterDataImpl" />
+	<method signature="void insertData(int,java.lang.String)" class="org.w3c.tidy.DOMCharacterDataImpl" />
+	<method signature="void deleteData(int,int)" class="org.w3c.tidy.DOMCharacterDataImpl" />
+	<method signature="java.lang.String substringData(int,int)" class="org.w3c.tidy.DOMCharacterDataImpl" />
+	<method signature="int getLength()" class="org.w3c.tidy.DOMCharacterDataImpl" />
+	<method signature="void setData(java.lang.String)" class="org.w3c.tidy.DOMCharacterDataImpl" />
+	<method signature="java.lang.String getData()" class="org.w3c.tidy.DOMCharacterDataImpl" />
+	<method signature="void appendData(java.lang.String)" class="org.w3c.tidy.DOMCharacterDataImpl" />
+	<class name="org.w3c.tidy.DOMTextImpl" />
+	<method signature="org.w3c.dom.Text splitText(int)" class="org.w3c.tidy.DOMTextImpl" />
+	<method signature="void &lt;init&gt;(org.w3c.tidy.Node)" class="org.w3c.tidy.DOMTextImpl" />
+	<method signature="java.lang.String getNodeName()" class="org.w3c.tidy.DOMTextImpl" />
+	<method signature="short getNodeType()" class="org.w3c.tidy.DOMTextImpl" />
+	<class name="org.w3c.tidy.AttrCheck" />
+	<method signature="void check(org.w3c.tidy.Lexer,org.w3c.tidy.Node,org.w3c.tidy.AttVal)" class="org.w3c.tidy.AttrCheck" />
+	<class name="org.w3c.tidy.AttrCheckImpl$CheckBool" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.AttrCheckImpl$CheckBool" />
+	<method signature="void check(org.w3c.tidy.Lexer,org.w3c.tidy.Node,org.w3c.tidy.AttVal)" class="org.w3c.tidy.AttrCheckImpl$CheckBool" />
+	<class name="org.w3c.tidy.DOMCommentImpl" />
+	<method signature="void &lt;init&gt;(org.w3c.tidy.Node)" class="org.w3c.tidy.DOMCommentImpl" />
+	<method signature="java.lang.String getNodeName()" class="org.w3c.tidy.DOMCommentImpl" />
+	<method signature="short getNodeType()" class="org.w3c.tidy.DOMCommentImpl" />
+	<class name="org.w3c.tidy.AttrCheckImpl$CheckAlign" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.AttrCheckImpl$CheckAlign" />
+	<method signature="void check(org.w3c.tidy.Lexer,org.w3c.tidy.Node,org.w3c.tidy.AttVal)" class="org.w3c.tidy.AttrCheckImpl$CheckAlign" />
+	<class name="org.w3c.tidy.Parser" />
+	<method signature="void parse(org.w3c.tidy.Lexer,org.w3c.tidy.Node,short)" class="org.w3c.tidy.Parser" />
+	<class name="org.w3c.tidy.CheckAttribsImpl$CheckMap" />
+	<method signature="void check(org.w3c.tidy.Lexer,org.w3c.tidy.Node)" class="org.w3c.tidy.CheckAttribsImpl$CheckMap" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.CheckAttribsImpl$CheckMap" />
+	<class name="org.w3c.tidy.DOMNodeImpl" />
+	<method signature="void setPrefix(java.lang.String)" class="org.w3c.tidy.DOMNodeImpl" />
+	<method signature="org.w3c.dom.Node appendChild(org.w3c.dom.Node)" class="org.w3c.tidy.DOMNodeImpl" />
+	<method signature="java.lang.String getNodeValue()" class="org.w3c.tidy.DOMNodeImpl" />
+	<method signature="java.lang.String getPrefix()" class="org.w3c.tidy.DOMNodeImpl" />
+	<method signature="org.w3c.dom.Node getNextSibling()" class="org.w3c.tidy.DOMNodeImpl" />
+	<method signature="org.w3c.dom.Node getFirstChild()" class="org.w3c.tidy.DOMNodeImpl" />
+	<method signature="org.w3c.dom.Document getOwnerDocument()" class="org.w3c.tidy.DOMNodeImpl" />
+	<method signature="java.lang.String getNodeName()" class="org.w3c.tidy.DOMNodeImpl" />
+	<method signature="boolean isSupported(java.lang.String,java.lang.String)" class="org.w3c.tidy.DOMNodeImpl" />
+	<method signature="java.lang.String getLocalName()" class="org.w3c.tidy.DOMNodeImpl" />
+	<method signature="org.w3c.dom.Node replaceChild(org.w3c.dom.Node,org.w3c.dom.Node)" class="org.w3c.tidy.DOMNodeImpl" />
+	<method signature="org.w3c.dom.Node getPreviousSibling()" class="org.w3c.tidy.DOMNodeImpl" />
+	<method signature="org.w3c.dom.Node cloneNode(boolean)" class="org.w3c.tidy.DOMNodeImpl" />
+	<method signature="org.w3c.dom.Node removeChild(org.w3c.dom.Node)" class="org.w3c.tidy.DOMNodeImpl" />
+	<method signature="org.w3c.dom.Node getLastChild()" class="org.w3c.tidy.DOMNodeImpl" />
+	<method signature="boolean hasChildNodes()" class="org.w3c.tidy.DOMNodeImpl" />
+	<method signature="java.lang.String getNamespaceURI()" class="org.w3c.tidy.DOMNodeImpl" />
+	<method signature="short getNodeType()" class="org.w3c.tidy.DOMNodeImpl" />
+	<method signature="void normalize()" class="org.w3c.tidy.DOMNodeImpl" />
+	<method signature="void &lt;init&gt;(org.w3c.tidy.Node)" class="org.w3c.tidy.DOMNodeImpl" />
+	<method signature="org.w3c.dom.NamedNodeMap getAttributes()" class="org.w3c.tidy.DOMNodeImpl" />
+	<method signature="org.w3c.dom.NodeList getChildNodes()" class="org.w3c.tidy.DOMNodeImpl" />
+	<method signature="org.w3c.dom.Node getParentNode()" class="org.w3c.tidy.DOMNodeImpl" />
+	<method signature="void setNodeValue(java.lang.String)" class="org.w3c.tidy.DOMNodeImpl" />
+	<method signature="boolean supports(java.lang.String,java.lang.String)" class="org.w3c.tidy.DOMNodeImpl" />
+	<method signature="boolean hasAttributes()" class="org.w3c.tidy.DOMNodeImpl" />
+	<method signature="org.w3c.dom.Node insertBefore(org.w3c.dom.Node,org.w3c.dom.Node)" class="org.w3c.tidy.DOMNodeImpl" />
+	<field name="adaptee" class="org.w3c.tidy.DOMNodeImpl" />
+	<class name="org.w3c.tidy.Dict" />
+	<method signature="void &lt;init&gt;(java.lang.String,short,int,org.w3c.tidy.Parser,org.w3c.tidy.CheckAttribs)" class="org.w3c.tidy.Dict" />
+	<field name="CM_OMITST" class="org.w3c.tidy.Dict" />
+	<field name="model" class="org.w3c.tidy.Dict" />
+	<field name="VERS_ALL" class="org.w3c.tidy.Dict" />
+	<field name="CM_OBJECT" class="org.w3c.tidy.Dict" />
+	<field name="VERS_HTML40_LOOSE" class="org.w3c.tidy.Dict" />
+	<field name="CM_TABLE" class="org.w3c.tidy.Dict" />
+	<field name="CM_FRAMES" class="org.w3c.tidy.Dict" />
+	<field name="CM_MIXED" class="org.w3c.tidy.Dict" />
+	<field name="VERS_SUN" class="org.w3c.tidy.Dict" />
+	<field name="VERS_MICROSOFT" class="org.w3c.tidy.Dict" />
+	<field name="VERS_MALFORMED" class="org.w3c.tidy.Dict" />
+	<field name="VERS_HTML20" class="org.w3c.tidy.Dict" />
+	<field name="name" class="org.w3c.tidy.Dict" />
+	<field name="CM_ROWGRP" class="org.w3c.tidy.Dict" />
+	<field name="VERS_NETSCAPE" class="org.w3c.tidy.Dict" />
+	<field name="VERS_XML" class="org.w3c.tidy.Dict" />
+	<field name="VERS_FROM32" class="org.w3c.tidy.Dict" />
+	<field name="CM_ROW" class="org.w3c.tidy.Dict" />
+	<field name="CM_PARAM" class="org.w3c.tidy.Dict" />
+	<field name="VERS_HTML40" class="org.w3c.tidy.Dict" />
+	<field name="VERS_HTML40_STRICT" class="org.w3c.tidy.Dict" />
+	<field name="CM_INLINE" class="org.w3c.tidy.Dict" />
+	<field name="CM_HEAD" class="org.w3c.tidy.Dict" />
+	<field name="CM_HEADING" class="org.w3c.tidy.Dict" />
+	<field name="CM_DEFLIST" class="org.w3c.tidy.Dict" />
+	<field name="CM_OBSOLETE" class="org.w3c.tidy.Dict" />
+	<field name="VERS_IFRAMES" class="org.w3c.tidy.Dict" />
+	<field name="VERS_EVERYTHING" class="org.w3c.tidy.Dict" />
+	<field name="VERS_LOOSE" class="org.w3c.tidy.Dict" />
+	<field name="CM_HTML" class="org.w3c.tidy.Dict" />
+	<field name="CM_IMG" class="org.w3c.tidy.Dict" />
+	<field name="versions" class="org.w3c.tidy.Dict" />
+	<field name="CM_NEW" class="org.w3c.tidy.Dict" />
+	<field name="CM_EMPTY" class="org.w3c.tidy.Dict" />
+	<field name="VERS_HTML32" class="org.w3c.tidy.Dict" />
+	<field name="CM_UNKNOWN" class="org.w3c.tidy.Dict" />
+	<field name="CM_NO_INDENT" class="org.w3c.tidy.Dict" />
+	<field name="VERS_UNKNOWN" class="org.w3c.tidy.Dict" />
+	<field name="chkattrs" class="org.w3c.tidy.Dict" />
+	<field name="CM_LIST" class="org.w3c.tidy.Dict" />
+	<field name="CM_FIELD" class="org.w3c.tidy.Dict" />
+	<field name="CM_BLOCK" class="org.w3c.tidy.Dict" />
+	<field name="VERS_FRAMES" class="org.w3c.tidy.Dict" />
+	<field name="VERS_PROPRIETARY" class="org.w3c.tidy.Dict" />
+	<field name="parser" class="org.w3c.tidy.Dict" />
+	<field name="CM_OPT" class="org.w3c.tidy.Dict" />
+	<class name="org.w3c.tidy.EntityTable" />
+	<method signature="org.w3c.tidy.Entity lookup(java.lang.String)" class="org.w3c.tidy.EntityTable" />
+	<method signature="short entityCode(java.lang.String)" class="org.w3c.tidy.EntityTable" />
+	<method signature="org.w3c.tidy.EntityTable getDefaultEntityTable()" class="org.w3c.tidy.EntityTable" />
+	<method signature="org.w3c.tidy.Entity install(org.w3c.tidy.Entity)" class="org.w3c.tidy.EntityTable" />
+	<method signature="java.lang.String entityName(short)" class="org.w3c.tidy.EntityTable" />
+	<method signature="org.w3c.tidy.Entity install(java.lang.String,short)" class="org.w3c.tidy.EntityTable" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.EntityTable" />
+	<class name="org.w3c.tidy.CheckAttribsImpl$CheckHTML" />
+	<method signature="void check(org.w3c.tidy.Lexer,org.w3c.tidy.Node)" class="org.w3c.tidy.CheckAttribsImpl$CheckHTML" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.CheckAttribsImpl$CheckHTML" />
+	<class name="org.w3c.tidy.TagTable" />
+	<method signature="void defineBlockTag(java.lang.String)" class="org.w3c.tidy.TagTable" />
+	<method signature="org.w3c.tidy.Dict install(org.w3c.tidy.Dict)" class="org.w3c.tidy.TagTable" />
+	<method signature="org.w3c.tidy.Parser findParser(org.w3c.tidy.Node)" class="org.w3c.tidy.TagTable" />
+	<method signature="org.w3c.tidy.Dict lookup(java.lang.String)" class="org.w3c.tidy.TagTable" />
+	<method signature="boolean findTag(org.w3c.tidy.Node)" class="org.w3c.tidy.TagTable" />
+	<method signature="void definePreTag(java.lang.String)" class="org.w3c.tidy.TagTable" />
+	<method signature="void defineEmptyTag(java.lang.String)" class="org.w3c.tidy.TagTable" />
+	<method signature="void defineInlineTag(java.lang.String)" class="org.w3c.tidy.TagTable" />
+	<method signature="void setConfiguration(org.w3c.tidy.Configuration)" class="org.w3c.tidy.TagTable" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.TagTable" />
+	<field name="tagTable" class="org.w3c.tidy.TagTable" />
+	<field name="tagNobr" class="org.w3c.tidy.TagTable" />
+	<field name="tagNoframes" class="org.w3c.tidy.TagTable" />
+	<field name="tagLink" class="org.w3c.tidy.TagTable" />
+	<field name="tagForm" class="org.w3c.tidy.TagTable" />
+	<field name="tagHtml" class="org.w3c.tidy.TagTable" />
+	<field name="tagBase" class="org.w3c.tidy.TagTable" />
+	<field name="tagTitle" class="org.w3c.tidy.TagTable" />
+	<field name="tagCol" class="org.w3c.tidy.TagTable" />
+	<field name="tagSmall" class="org.w3c.tidy.TagTable" />
+	<field name="tagSpan" class="org.w3c.tidy.TagTable" />
+	<field name="tagOl" class="org.w3c.tidy.TagTable" />
+	<field name="tagH2" class="org.w3c.tidy.TagTable" />
+	<field name="tagDd" class="org.w3c.tidy.TagTable" />
+	<field name="tagParam" class="org.w3c.tidy.TagTable" />
+	<field name="tagArea" class="org.w3c.tidy.TagTable" />
+	<field name="tagH1" class="org.w3c.tidy.TagTable" />
+	<field name="tagLi" class="org.w3c.tidy.TagTable" />
+	<field name="tagBr" class="org.w3c.tidy.TagTable" />
+	<field name="tagObject" class="org.w3c.tidy.TagTable" />
+	<field name="tagCenter" class="org.w3c.tidy.TagTable" />
+	<field name="tagFrame" class="org.w3c.tidy.TagTable" />
+	<field name="tagTh" class="org.w3c.tidy.TagTable" />
+	<field name="tagTd" class="org.w3c.tidy.TagTable" />
+	<field name="tagHead" class="org.w3c.tidy.TagTable" />
+	<field name="tagNoscript" class="org.w3c.tidy.TagTable" />
+	<field name="tagOption" class="org.w3c.tidy.TagTable" />
+	<field name="xmlTags" class="org.w3c.tidy.TagTable" />
+	<field name="tagImg" class="org.w3c.tidy.TagTable" />
+	<field name="tagBlockquote" class="org.w3c.tidy.TagTable" />
+	<field name="tagPre" class="org.w3c.tidy.TagTable" />
+	<field name="tagTr" class="org.w3c.tidy.TagTable" />
+	<field name="tagBig" class="org.w3c.tidy.TagTable" />
+	<field name="tagCaption" class="org.w3c.tidy.TagTable" />
+	<field name="tagEm" class="org.w3c.tidy.TagTable" />
+	<field name="tagOptgroup" class="org.w3c.tidy.TagTable" />
+	<field name="tagUl" class="org.w3c.tidy.TagTable" />
+	<field name="tagStyle" class="org.w3c.tidy.TagTable" />
+	<field name="tagWbr" class="org.w3c.tidy.TagTable" />
+	<field name="tagApplet" class="org.w3c.tidy.TagTable" />
+	<field name="tagListing" class="org.w3c.tidy.TagTable" />
+	<field name="tagDir" class="org.w3c.tidy.TagTable" />
+	<field name="tagHr" class="org.w3c.tidy.TagTable" />
+	<field name="tagDiv" class="org.w3c.tidy.TagTable" />
+	<field name="tagB" class="org.w3c.tidy.TagTable" />
+	<field name="tagTextarea" class="org.w3c.tidy.TagTable" />
+	<field name="tagDl" class="org.w3c.tidy.TagTable" />
+	<field name="tagBody" class="org.w3c.tidy.TagTable" />
+	<field name="tagI" class="org.w3c.tidy.TagTable" />
+	<field name="tagStrong" class="org.w3c.tidy.TagTable" />
+	<field name="tagMap" class="org.w3c.tidy.TagTable" />
+	<field name="tagDt" class="org.w3c.tidy.TagTable" />
+	<field name="tagScript" class="org.w3c.tidy.TagTable" />
+	<field name="tagA" class="org.w3c.tidy.TagTable" />
+	<field name="tagMeta" class="org.w3c.tidy.TagTable" />
+	<field name="tagLayer" class="org.w3c.tidy.TagTable" />
+	<field name="tagFont" class="org.w3c.tidy.TagTable" />
+	<field name="tagP" class="org.w3c.tidy.TagTable" />
+	<field name="tagFrameset" class="org.w3c.tidy.TagTable" />
+	<field name="tagSpacer" class="org.w3c.tidy.TagTable" />
+	<class name="org.w3c.tidy.CheckAttribsImpl$CheckLINK" />
+	<method signature="void check(org.w3c.tidy.Lexer,org.w3c.tidy.Node)" class="org.w3c.tidy.CheckAttribsImpl$CheckLINK" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.CheckAttribsImpl$CheckLINK" />
+	<class name="org.w3c.tidy.AttributeTable" />
+	<method signature="org.w3c.tidy.Attribute install(org.w3c.tidy.Attribute)" class="org.w3c.tidy.AttributeTable" />
+	<method signature="org.w3c.tidy.AttributeTable getDefaultAttributeTable()" class="org.w3c.tidy.AttributeTable" />
+	<method signature="boolean isLiteralAttribute(java.lang.String)" class="org.w3c.tidy.AttributeTable" />
+	<method signature="boolean isScript(java.lang.String)" class="org.w3c.tidy.AttributeTable" />
+	<method signature="boolean isUrl(java.lang.String)" class="org.w3c.tidy.AttributeTable" />
+	<method signature="org.w3c.tidy.Attribute lookup(java.lang.String)" class="org.w3c.tidy.AttributeTable" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.AttributeTable" />
+	<method signature="org.w3c.tidy.Attribute findAttribute(org.w3c.tidy.AttVal)" class="org.w3c.tidy.AttributeTable" />
+	<method signature="void declareLiteralAttrib(java.lang.String)" class="org.w3c.tidy.AttributeTable" />
+	<field name="attrLanguage" class="org.w3c.tidy.AttributeTable" />
+	<field name="attrId" class="org.w3c.tidy.AttributeTable" />
+	<field name="attrAlt" class="org.w3c.tidy.AttributeTable" />
+	<field name="attrXmlns" class="org.w3c.tidy.AttributeTable" />
+	<field name="attrTitle" class="org.w3c.tidy.AttributeTable" />
+	<field name="attrValue" class="org.w3c.tidy.AttributeTable" />
+	<field name="attrSrc" class="org.w3c.tidy.AttributeTable" />
+	<field name="attrUsemap" class="org.w3c.tidy.AttributeTable" />
+	<field name="attrDatafld" class="org.w3c.tidy.AttributeTable" />
+	<field name="attrWidth" class="org.w3c.tidy.AttributeTable" />
+	<field name="attrContent" class="org.w3c.tidy.AttributeTable" />
+	<field name="attrLongdesc" class="org.w3c.tidy.AttributeTable" />
+	<field name="attrHeight" class="org.w3c.tidy.AttributeTable" />
+	<field name="attrSummary" class="org.w3c.tidy.AttributeTable" />
+	<field name="attrIsmap" class="org.w3c.tidy.AttributeTable" />
+	<field name="attrType" class="org.w3c.tidy.AttributeTable" />
+	<field name="attrHref" class="org.w3c.tidy.AttributeTable" />
+	<field name="attrName" class="org.w3c.tidy.AttributeTable" />
+	<class name="org.w3c.tidy.AttVal" />
+	<method signature="org.w3c.tidy.Attribute checkAttribute(org.w3c.tidy.Lexer,org.w3c.tidy.Node)" class="org.w3c.tidy.AttVal" />
+	<method signature="void &lt;init&gt;(org.w3c.tidy.AttVal,org.w3c.tidy.Attribute,int,java.lang.String,java.lang.String)" class="org.w3c.tidy.AttVal" />
+	<method signature="org.w3c.dom.Attr getAdapter()" class="org.w3c.tidy.AttVal" />
+	<method signature="boolean isBoolAttribute()" class="org.w3c.tidy.AttVal" />
+	<method signature="void checkUniqueAttribute(org.w3c.tidy.Lexer,org.w3c.tidy.Node)" class="org.w3c.tidy.AttVal" />
+	<method signature="java.lang.Object clone()" class="org.w3c.tidy.AttVal" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.AttVal" />
+	<method signature="void &lt;init&gt;(org.w3c.tidy.AttVal,org.w3c.tidy.Attribute,org.w3c.tidy.Node,org.w3c.tidy.Node,int,java.lang.String,java.lang.String)" class="org.w3c.tidy.AttVal" />
+	<field name="dict" class="org.w3c.tidy.AttVal" />
+	<field name="php" class="org.w3c.tidy.AttVal" />
+	<field name="next" class="org.w3c.tidy.AttVal" />
+	<field name="value" class="org.w3c.tidy.AttVal" />
+	<field name="attribute" class="org.w3c.tidy.AttVal" />
+	<field name="asp" class="org.w3c.tidy.AttVal" />
+	<field name="adapter" class="org.w3c.tidy.AttVal" />
+	<field name="delim" class="org.w3c.tidy.AttVal" />
+	<class name="org.w3c.tidy.AttrCheckImpl$CheckName" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.AttrCheckImpl$CheckName" />
+	<method signature="void check(org.w3c.tidy.Lexer,org.w3c.tidy.Node,org.w3c.tidy.AttVal)" class="org.w3c.tidy.AttrCheckImpl$CheckName" />
+	<class name="org.w3c.tidy.AttrCheckImpl" />
+	<method signature="org.w3c.tidy.AttrCheck getCheckBool()" class="org.w3c.tidy.AttrCheckImpl" />
+	<method signature="org.w3c.tidy.AttrCheck getCheckValign()" class="org.w3c.tidy.AttrCheckImpl" />
+	<method signature="org.w3c.tidy.AttrCheck getCheckScript()" class="org.w3c.tidy.AttrCheckImpl" />
+	<method signature="org.w3c.tidy.AttrCheck getCheckAlign()" class="org.w3c.tidy.AttrCheckImpl" />
+	<method signature="org.w3c.tidy.AttrCheck getCheckName()" class="org.w3c.tidy.AttrCheckImpl" />
+	<method signature="org.w3c.tidy.AttrCheck getCheckUrl()" class="org.w3c.tidy.AttrCheckImpl" />
+	<method signature="org.w3c.tidy.AttrCheck getCheckId()" class="org.w3c.tidy.AttrCheckImpl" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.AttrCheckImpl" />
+	<class name="org.w3c.tidy.DOMDocumentImpl" />
+	<method signature="void setTagTable(org.w3c.tidy.TagTable)" class="org.w3c.tidy.DOMDocumentImpl" />
+	<method signature="org.w3c.dom.Element createElementNS(java.lang.String,java.lang.String)" class="org.w3c.tidy.DOMDocumentImpl" />
+	<method signature="org.w3c.dom.ProcessingInstruction createProcessingInstruction(java.lang.String,java.lang.String)" class="org.w3c.tidy.DOMDocumentImpl" />
+	<method signature="org.w3c.dom.Text createTextNode(java.lang.String)" class="org.w3c.tidy.DOMDocumentImpl" />
+	<method signature="org.w3c.dom.CDATASection createCDATASection(java.lang.String)" class="org.w3c.tidy.DOMDocumentImpl" />
+	<method signature="org.w3c.dom.Element getElementById(java.lang.String)" class="org.w3c.tidy.DOMDocumentImpl" />
+	<method signature="org.w3c.dom.Attr createAttributeNS(java.lang.String,java.lang.String)" class="org.w3c.tidy.DOMDocumentImpl" />
+	<method signature="org.w3c.dom.DOMImplementation getImplementation()" class="org.w3c.tidy.DOMDocumentImpl" />
+	<method signature="java.lang.String getNodeName()" class="org.w3c.tidy.DOMDocumentImpl" />
+	<method signature="org.w3c.dom.NodeList getElementsByTagName(java.lang.String)" class="org.w3c.tidy.DOMDocumentImpl" />
+	<method signature="org.w3c.dom.DocumentFragment createDocumentFragment()" class="org.w3c.tidy.DOMDocumentImpl" />
+	<method signature="short getNodeType()" class="org.w3c.tidy.DOMDocumentImpl" />
+	<method signature="void &lt;init&gt;(org.w3c.tidy.Node)" class="org.w3c.tidy.DOMDocumentImpl" />
+	<method signature="org.w3c.dom.EntityReference createEntityReference(java.lang.String)" class="org.w3c.tidy.DOMDocumentImpl" />
+	<method signature="org.w3c.dom.Comment createComment(java.lang.String)" class="org.w3c.tidy.DOMDocumentImpl" />
+	<method signature="org.w3c.dom.NodeList getElementsByTagNameNS(java.lang.String,java.lang.String)" class="org.w3c.tidy.DOMDocumentImpl" />
+	<method signature="org.w3c.dom.Element createElement(java.lang.String)" class="org.w3c.tidy.DOMDocumentImpl" />
+	<method signature="org.w3c.dom.DocumentType getDoctype()" class="org.w3c.tidy.DOMDocumentImpl" />
+	<method signature="org.w3c.dom.Attr createAttribute(java.lang.String)" class="org.w3c.tidy.DOMDocumentImpl" />
+	<method signature="org.w3c.dom.Node importNode(org.w3c.dom.Node,boolean)" class="org.w3c.tidy.DOMDocumentImpl" />
+	<method signature="org.w3c.dom.Element getDocumentElement()" class="org.w3c.tidy.DOMDocumentImpl" />
+	<class name="org.w3c.tidy.Attribute" />
+	<method signature="void &lt;init&gt;(java.lang.String,boolean,short,org.w3c.tidy.AttrCheck)" class="org.w3c.tidy.Attribute" />
+	<method signature="void &lt;init&gt;(java.lang.String,short,org.w3c.tidy.AttrCheck)" class="org.w3c.tidy.Attribute" />
+	<field name="versions" class="org.w3c.tidy.Attribute" />
+	<field name="name" class="org.w3c.tidy.Attribute" />
+	<field name="attrchk" class="org.w3c.tidy.Attribute" />
+	<field name="nowrap" class="org.w3c.tidy.Attribute" />
+	<field name="literal" class="org.w3c.tidy.Attribute" />
+	<class name="org.w3c.tidy.ParserImpl$ParseInline" />
+	<method signature="void parse(org.w3c.tidy.Lexer,org.w3c.tidy.Node,short)" class="org.w3c.tidy.ParserImpl$ParseInline" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.ParserImpl$ParseInline" />
+	<class name="org.w3c.tidy.ParserImpl$ParseBody" />
+	<method signature="void parse(org.w3c.tidy.Lexer,org.w3c.tidy.Node,short)" class="org.w3c.tidy.ParserImpl$ParseBody" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.ParserImpl$ParseBody" />
+	<class name="org.w3c.tidy.StyleProp" />
+	<method signature="void &lt;init&gt;(java.lang.String,java.lang.String)" class="org.w3c.tidy.StyleProp" />
+	<method signature="void &lt;init&gt;(java.lang.String,java.lang.String,org.w3c.tidy.StyleProp)" class="org.w3c.tidy.StyleProp" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.StyleProp" />
+	<field name="next" class="org.w3c.tidy.StyleProp" />
+	<field name="name" class="org.w3c.tidy.StyleProp" />
+	<field name="value" class="org.w3c.tidy.StyleProp" />
+	<class name="org.w3c.tidy.MutableObject" />
+	<method signature="java.lang.Object getObject()" class="org.w3c.tidy.MutableObject" />
+	<method signature="void setObject(java.lang.Object)" class="org.w3c.tidy.MutableObject" />
+	<method signature="void &lt;init&gt;(java.lang.Object)" class="org.w3c.tidy.MutableObject" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.MutableObject" />
+	<class name="org.w3c.tidy.DOMElementImpl" />
+	<method signature="void setAttributeNS(java.lang.String,java.lang.String,java.lang.String)" class="org.w3c.tidy.DOMElementImpl" />
+	<method signature="org.w3c.dom.Attr removeAttributeNode(org.w3c.dom.Attr)" class="org.w3c.tidy.DOMElementImpl" />
+	<method signature="java.lang.String getTagName()" class="org.w3c.tidy.DOMElementImpl" />
+	<method signature="org.w3c.dom.Attr getAttributeNodeNS(java.lang.String,java.lang.String)" class="org.w3c.tidy.DOMElementImpl" />
+	<method signature="void removeAttribute(java.lang.String)" class="org.w3c.tidy.DOMElementImpl" />
+	<method signature="org.w3c.dom.NodeList getElementsByTagName(java.lang.String)" class="org.w3c.tidy.DOMElementImpl" />
+	<method signature="org.w3c.dom.Attr setAttributeNode(org.w3c.dom.Attr)" class="org.w3c.tidy.DOMElementImpl" />
+	<method signature="java.lang.String getAttribute(java.lang.String)" class="org.w3c.tidy.DOMElementImpl" />
+	<method signature="short getNodeType()" class="org.w3c.tidy.DOMElementImpl" />
+	<method signature="boolean hasAttributeNS(java.lang.String,java.lang.String)" class="org.w3c.tidy.DOMElementImpl" />
+	<method signature="void normalize()" class="org.w3c.tidy.DOMElementImpl" />
+	<method signature="void &lt;init&gt;(org.w3c.tidy.Node)" class="org.w3c.tidy.DOMElementImpl" />
+	<method signature="boolean hasAttribute(java.lang.String)" class="org.w3c.tidy.DOMElementImpl" />
+	<method signature="org.w3c.dom.Attr setAttributeNodeNS(org.w3c.dom.Attr)" class="org.w3c.tidy.DOMElementImpl" />
+	<method signature="void removeAttributeNS(java.lang.String,java.lang.String)" class="org.w3c.tidy.DOMElementImpl" />
+	<method signature="org.w3c.dom.NodeList getElementsByTagNameNS(java.lang.String,java.lang.String)" class="org.w3c.tidy.DOMElementImpl" />
+	<method signature="org.w3c.dom.Attr getAttributeNode(java.lang.String)" class="org.w3c.tidy.DOMElementImpl" />
+	<method signature="void setAttribute(java.lang.String,java.lang.String)" class="org.w3c.tidy.DOMElementImpl" />
+	<method signature="java.lang.String getAttributeNS(java.lang.String,java.lang.String)" class="org.w3c.tidy.DOMElementImpl" />
+	<class name="org.w3c.tidy.CheckAttribsImpl$CheckTABLE" />
+	<method signature="void check(org.w3c.tidy.Lexer,org.w3c.tidy.Node)" class="org.w3c.tidy.CheckAttribsImpl$CheckTABLE" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.CheckAttribsImpl$CheckTABLE" />
+	<class name="org.w3c.tidy.AttrCheckImpl$CheckId" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.AttrCheckImpl$CheckId" />
+	<method signature="void check(org.w3c.tidy.Lexer,org.w3c.tidy.Node,org.w3c.tidy.AttVal)" class="org.w3c.tidy.AttrCheckImpl$CheckId" />
+	<class name="org.w3c.tidy.ParserImpl$ParseRowGroup" />
+	<method signature="void parse(org.w3c.tidy.Lexer,org.w3c.tidy.Node,short)" class="org.w3c.tidy.ParserImpl$ParseRowGroup" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.ParserImpl$ParseRowGroup" />
+	<class name="org.w3c.tidy.DOMAttrImpl" />
+	<method signature="org.w3c.dom.Node appendChild(org.w3c.dom.Node)" class="org.w3c.tidy.DOMAttrImpl" />
+	<method signature="boolean getSpecified()" class="org.w3c.tidy.DOMAttrImpl" />
+	<method signature="java.lang.String getNodeValue()" class="org.w3c.tidy.DOMAttrImpl" />
+	<method signature="org.w3c.dom.Node getNextSibling()" class="org.w3c.tidy.DOMAttrImpl" />
+	<method signature="org.w3c.dom.Node getFirstChild()" class="org.w3c.tidy.DOMAttrImpl" />
+	<method signature="org.w3c.dom.Document getOwnerDocument()" class="org.w3c.tidy.DOMAttrImpl" />
+	<method signature="java.lang.String getNodeName()" class="org.w3c.tidy.DOMAttrImpl" />
+	<method signature="java.lang.String getName()" class="org.w3c.tidy.DOMAttrImpl" />
+	<method signature="org.w3c.dom.Node replaceChild(org.w3c.dom.Node,org.w3c.dom.Node)" class="org.w3c.tidy.DOMAttrImpl" />
+	<method signature="org.w3c.dom.Node getPreviousSibling()" class="org.w3c.tidy.DOMAttrImpl" />
+	<method signature="org.w3c.dom.Node cloneNode(boolean)" class="org.w3c.tidy.DOMAttrImpl" />
+	<method signature="org.w3c.dom.Node removeChild(org.w3c.dom.Node)" class="org.w3c.tidy.DOMAttrImpl" />
+	<method signature="org.w3c.dom.Node getLastChild()" class="org.w3c.tidy.DOMAttrImpl" />
+	<method signature="boolean hasChildNodes()" class="org.w3c.tidy.DOMAttrImpl" />
+	<method signature="org.w3c.dom.Element getOwnerElement()" class="org.w3c.tidy.DOMAttrImpl" />
+	<method signature="void &lt;init&gt;(org.w3c.tidy.AttVal)" class="org.w3c.tidy.DOMAttrImpl" />
+	<method signature="short getNodeType()" class="org.w3c.tidy.DOMAttrImpl" />
+	<method signature="org.w3c.dom.NamedNodeMap getAttributes()" class="org.w3c.tidy.DOMAttrImpl" />
+	<method signature="org.w3c.dom.NodeList getChildNodes()" class="org.w3c.tidy.DOMAttrImpl" />
+	<method signature="org.w3c.dom.Node getParentNode()" class="org.w3c.tidy.DOMAttrImpl" />
+	<method signature="void setNodeValue(java.lang.String)" class="org.w3c.tidy.DOMAttrImpl" />
+	<method signature="java.lang.String getValue()" class="org.w3c.tidy.DOMAttrImpl" />
+	<method signature="void setValue(java.lang.String)" class="org.w3c.tidy.DOMAttrImpl" />
+	<method signature="org.w3c.dom.Node insertBefore(org.w3c.dom.Node,org.w3c.dom.Node)" class="org.w3c.tidy.DOMAttrImpl" />
+	<field name="avAdaptee" class="org.w3c.tidy.DOMAttrImpl" />
+	<class name="org.w3c.tidy.ParserImpl" />
+	<method signature="org.w3c.tidy.Parser getParseRow()" class="org.w3c.tidy.ParserImpl" />
+	<method signature="org.w3c.tidy.Parser getParseList()" class="org.w3c.tidy.ParserImpl" />
+	<method signature="org.w3c.tidy.Parser getParseBody()" class="org.w3c.tidy.ParserImpl" />
+	<method signature="org.w3c.tidy.Parser getParseDefList()" class="org.w3c.tidy.ParserImpl" />
+	<method signature="org.w3c.tidy.Parser getParseTableTag()" class="org.w3c.tidy.ParserImpl" />
+	<method signature="boolean isJavaScript(org.w3c.tidy.Node)" class="org.w3c.tidy.ParserImpl" />
+	<method signature="org.w3c.tidy.Parser getParseFrameSet()" class="org.w3c.tidy.ParserImpl" />
+	<method signature="org.w3c.tidy.Node parseDocument(org.w3c.tidy.Lexer)" class="org.w3c.tidy.ParserImpl" />
+	<method signature="org.w3c.tidy.Parser getParseHead()" class="org.w3c.tidy.ParserImpl" />
+	<method signature="org.w3c.tidy.Parser getParseRowGroup()" class="org.w3c.tidy.ParserImpl" />
+	<method signature="boolean XMLPreserveWhiteSpace(org.w3c.tidy.Node,org.w3c.tidy.TagTable)" class="org.w3c.tidy.ParserImpl" />
+	<method signature="org.w3c.tidy.Parser getParseInline()" class="org.w3c.tidy.ParserImpl" />
+	<method signature="org.w3c.tidy.Parser getParseNoFrames()" class="org.w3c.tidy.ParserImpl" />
+	<method signature="org.w3c.tidy.Parser getParseTitle()" class="org.w3c.tidy.ParserImpl" />
+	<method signature="org.w3c.tidy.Parser getParseColGroup()" class="org.w3c.tidy.ParserImpl" />
+	<method signature="org.w3c.tidy.Parser getParseOptGroup()" class="org.w3c.tidy.ParserImpl" />
+	<method signature="void parseXMLElement(org.w3c.tidy.Lexer,org.w3c.tidy.Node,short)" class="org.w3c.tidy.ParserImpl" />
+	<method signature="org.w3c.tidy.Parser getParsePre()" class="org.w3c.tidy.ParserImpl" />
+	<method signature="org.w3c.tidy.Parser getParseBlock()" class="org.w3c.tidy.ParserImpl" />
+	<method signature="org.w3c.tidy.Parser getParseText()" class="org.w3c.tidy.ParserImpl" />
+	<method signature="org.w3c.tidy.Node parseXMLDocument(org.w3c.tidy.Lexer)" class="org.w3c.tidy.ParserImpl" />
+	<method signature="org.w3c.tidy.Parser getParseScript()" class="org.w3c.tidy.ParserImpl" />
+	<method signature="org.w3c.tidy.Parser getParseSelect()" class="org.w3c.tidy.ParserImpl" />
+	<method signature="org.w3c.tidy.Parser getParseHTML()" class="org.w3c.tidy.ParserImpl" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.ParserImpl" />
+	<class name="org.w3c.tidy.CheckAttribsImpl$CheckAnchor" />
+	<method signature="void check(org.w3c.tidy.Lexer,org.w3c.tidy.Node)" class="org.w3c.tidy.CheckAttribsImpl$CheckAnchor" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.CheckAttribsImpl$CheckAnchor" />
+	<class name="org.w3c.tidy.ParserImpl$ParseFrameSet" />
+	<method signature="void parse(org.w3c.tidy.Lexer,org.w3c.tidy.Node,short)" class="org.w3c.tidy.ParserImpl$ParseFrameSet" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.ParserImpl$ParseFrameSet" />
+	<class name="org.w3c.tidy.ParserImpl$ParseSelect" />
+	<method signature="void parse(org.w3c.tidy.Lexer,org.w3c.tidy.Node,short)" class="org.w3c.tidy.ParserImpl$ParseSelect" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.ParserImpl$ParseSelect" />
+	<class name="org.w3c.tidy.ParserImpl$ParsePre" />
+	<method signature="void parse(org.w3c.tidy.Lexer,org.w3c.tidy.Node,short)" class="org.w3c.tidy.ParserImpl$ParsePre" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.ParserImpl$ParsePre" />
+	<class name="org.w3c.tidy.AttrCheckImpl$CheckUrl" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.AttrCheckImpl$CheckUrl" />
+	<method signature="void check(org.w3c.tidy.Lexer,org.w3c.tidy.Node,org.w3c.tidy.AttVal)" class="org.w3c.tidy.AttrCheckImpl$CheckUrl" />
+	<class name="org.w3c.tidy.CheckAttribsImpl$CheckIMG" />
+	<method signature="void check(org.w3c.tidy.Lexer,org.w3c.tidy.Node)" class="org.w3c.tidy.CheckAttribsImpl$CheckIMG" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.CheckAttribsImpl$CheckIMG" />
+	<class name="org.w3c.tidy.AttrCheckImpl$CheckValign" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.AttrCheckImpl$CheckValign" />
+	<method signature="void check(org.w3c.tidy.Lexer,org.w3c.tidy.Node,org.w3c.tidy.AttVal)" class="org.w3c.tidy.AttrCheckImpl$CheckValign" />
+	<class name="org.w3c.tidy.DOMCDATASectionImpl" />
+	<method signature="void &lt;init&gt;(org.w3c.tidy.Node)" class="org.w3c.tidy.DOMCDATASectionImpl" />
+	<method signature="java.lang.String getNodeName()" class="org.w3c.tidy.DOMCDATASectionImpl" />
+	<method signature="short getNodeType()" class="org.w3c.tidy.DOMCDATASectionImpl" />
+	<class name="org.w3c.tidy.CheckAttribsImpl$CheckCaption" />
+	<method signature="void check(org.w3c.tidy.Lexer,org.w3c.tidy.Node)" class="org.w3c.tidy.CheckAttribsImpl$CheckCaption" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.CheckAttribsImpl$CheckCaption" />
+	<class name="org.w3c.tidy.Configuration" />
+	<method signature="void adjust()" class="org.w3c.tidy.Configuration" />
+	<method signature="void addProps(java.util.Properties)" class="org.w3c.tidy.Configuration" />
+	<method signature="void parseFile(java.lang.String)" class="org.w3c.tidy.Configuration" />
+	<method signature="java.lang.String parseDocType(java.lang.String,java.lang.String)" class="org.w3c.tidy.Configuration" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.Configuration" />
+	<field name="MakeClean" class="org.w3c.tidy.Configuration" />
+	<field name="BreakBeforeBR" class="org.w3c.tidy.Configuration" />
+	<field name="DOCTYPE_OMIT" class="org.w3c.tidy.Configuration" />
+	<field name="errfile" class="org.w3c.tidy.Configuration" />
+	<field name="XmlSpace" class="org.w3c.tidy.Configuration" />
+	<field name="ShowWarnings" class="org.w3c.tidy.Configuration" />
+	<field name="EncloseBlockText" class="org.w3c.tidy.Configuration" />
+	<field name="XmlTags" class="org.w3c.tidy.Configuration" />
+	<field name="Emacs" class="org.w3c.tidy.Configuration" />
+	<field name="IndentContent" class="org.w3c.tidy.Configuration" />
+	<field name="docTypeStr" class="org.w3c.tidy.Configuration" />
+	<field name="CharEncoding" class="org.w3c.tidy.Configuration" />
+	<field name="DOCTYPE_LOOSE" class="org.w3c.tidy.Configuration" />
+	<field name="XmlPi" class="org.w3c.tidy.Configuration" />
+	<field name="spaces" class="org.w3c.tidy.Configuration" />
+	<field name="BurstSlides" class="org.w3c.tidy.Configuration" />
+	<field name="RAW" class="org.w3c.tidy.Configuration" />
+	<field name="FixComments" class="org.w3c.tidy.Configuration" />
+	<field name="QuoteMarks" class="org.w3c.tidy.Configuration" />
+	<field name="WrapJste" class="org.w3c.tidy.Configuration" />
+	<field name="Quiet" class="org.w3c.tidy.Configuration" />
+	<field name="HideEndTags" class="org.w3c.tidy.Configuration" />
+	<field name="QuoteAmpersand" class="org.w3c.tidy.Configuration" />
+	<field name="DOCTYPE_USER" class="org.w3c.tidy.Configuration" />
+	<field name="ISO2022" class="org.w3c.tidy.Configuration" />
+	<field name="xHTML" class="org.w3c.tidy.Configuration" />
+	<field name="TidyMark" class="org.w3c.tidy.Configuration" />
+	<field name="EncloseBodyText" class="org.w3c.tidy.Configuration" />
+	<field name="LogicalEmphasis" class="org.w3c.tidy.Configuration" />
+	<field name="WrapAttVals" class="org.w3c.tidy.Configuration" />
+	<field name="writeback" class="org.w3c.tidy.Configuration" />
+	<field name="MACROMAN" class="org.w3c.tidy.Configuration" />
+	<field name="WrapSection" class="org.w3c.tidy.Configuration" />
+	<field name="WrapAsp" class="org.w3c.tidy.Configuration" />
+	<field name="RawOut" class="org.w3c.tidy.Configuration" />
+	<field name="OnlyErrors" class="org.w3c.tidy.Configuration" />
+	<field name="FixBackslash" class="org.w3c.tidy.Configuration" />
+	<field name="LATIN1" class="org.w3c.tidy.Configuration" />
+	<field name="DropFontTags" class="org.w3c.tidy.Configuration" />
+	<field name="NumEntities" class="org.w3c.tidy.Configuration" />
+	<field name="KeepFileTimes" class="org.w3c.tidy.Configuration" />
+	<field name="WrapPhp" class="org.w3c.tidy.Configuration" />
+	<field name="SmartIndent" class="org.w3c.tidy.Configuration" />
+	<field name="slidestyle" class="org.w3c.tidy.Configuration" />
+	<field name="DOCTYPE_AUTO" class="org.w3c.tidy.Configuration" />
+	<field name="DOCTYPE_STRICT" class="org.w3c.tidy.Configuration" />
+	<field name="UpperCaseTags" class="org.w3c.tidy.Configuration" />
+	<field name="Word2000" class="org.w3c.tidy.Configuration" />
+	<field name="UpperCaseAttrs" class="org.w3c.tidy.Configuration" />
+	<field name="IndentAttributes" class="org.w3c.tidy.Configuration" />
+	<field name="wraplen" class="org.w3c.tidy.Configuration" />
+	<field name="docTypeMode" class="org.w3c.tidy.Configuration" />
+	<field name="ASCII" class="org.w3c.tidy.Configuration" />
+	<field name="XmlOut" class="org.w3c.tidy.Configuration" />
+	<field name="tt" class="org.w3c.tidy.Configuration" />
+	<field name="LiteralAttribs" class="org.w3c.tidy.Configuration" />
+	<field name="UTF8" class="org.w3c.tidy.Configuration" />
+	<field name="XmlPIs" class="org.w3c.tidy.Configuration" />
+	<field name="DropEmptyParas" class="org.w3c.tidy.Configuration" />
+	<field name="altText" class="org.w3c.tidy.Configuration" />
+	<field name="tabsize" class="org.w3c.tidy.Configuration" />
+	<field name="QuoteNbsp" class="org.w3c.tidy.Configuration" />
+	<field name="WrapScriptlets" class="org.w3c.tidy.Configuration" />
+	<class name="org.w3c.tidy.Lexer" />
+	<method signature="void addByte(int)" class="org.w3c.tidy.Lexer" />
+	<method signature="short apparentVersion()" class="org.w3c.tidy.Lexer" />
+	<method signature="org.w3c.tidy.Node getToken(short)" class="org.w3c.tidy.Lexer" />
+	<method signature="org.w3c.tidy.Node newLineNode()" class="org.w3c.tidy.Lexer" />
+	<method signature="boolean setXHTMLDocType(org.w3c.tidy.Node)" class="org.w3c.tidy.Lexer" />
+	<method signature="boolean fixXMLPI(org.w3c.tidy.Node)" class="org.w3c.tidy.Lexer" />
+	<method signature="void fixHTMLNameSpace(org.w3c.tidy.Node,java.lang.String)" class="org.w3c.tidy.Lexer" />
+	<method signature="void addStringLiteral(java.lang.String)" class="org.w3c.tidy.Lexer" />
+	<method signature="boolean canPrune(org.w3c.tidy.Node)" class="org.w3c.tidy.Lexer" />
+	<method signature="byte[] getBytes(java.lang.String)" class="org.w3c.tidy.Lexer" />
+	<method signature="void addStringToLexer(java.lang.String)" class="org.w3c.tidy.Lexer" />
+	<method signature="org.w3c.tidy.AttVal parseAttrs(org.w3c.tidy.MutableBoolean)" class="org.w3c.tidy.Lexer" />
+	<method signature="org.w3c.tidy.Node newNode(short,byte[],int,int,java.lang.String)" class="org.w3c.tidy.Lexer" />
+	<method signature="boolean addGenerator(org.w3c.tidy.Node)" class="org.w3c.tidy.Lexer" />
+	<method signature="boolean fixDocType(org.w3c.tidy.Node)" class="org.w3c.tidy.Lexer" />
+	<method signature="int parseServerInstruction()" class="org.w3c.tidy.Lexer" />
+	<method signature="org.w3c.tidy.Node newNode(short,byte[],int,int)" class="org.w3c.tidy.Lexer" />
+	<method signature="org.w3c.tidy.Node cloneNode(org.w3c.tidy.Node)" class="org.w3c.tidy.Lexer" />
+	<method signature="void fixId(org.w3c.tidy.Node)" class="org.w3c.tidy.Lexer" />
+	<method signature="java.lang.String getString(byte[],int,int)" class="org.w3c.tidy.Lexer" />
+	<method signature="org.w3c.tidy.Node inferredTag(java.lang.String)" class="org.w3c.tidy.Lexer" />
+	<method signature="int wstrcaselexcmp(java.lang.String,java.lang.String)" class="org.w3c.tidy.Lexer" />
+	<method signature="org.w3c.tidy.Node getCDATA(org.w3c.tidy.Node)" class="org.w3c.tidy.Lexer" />
+	<method signature="int inlineDup(org.w3c.tidy.Node)" class="org.w3c.tidy.Lexer" />
+	<method signature="int wstrcasecmp(java.lang.String,java.lang.String)" class="org.w3c.tidy.Lexer" />
+	<method signature="short HTMLVersion()" class="org.w3c.tidy.Lexer" />
+	<method signature="boolean expectsContent(org.w3c.tidy.Node)" class="org.w3c.tidy.Lexer" />
+	<method signature="boolean checkDocTypeKeyWords(org.w3c.tidy.Node)" class="org.w3c.tidy.Lexer" />
+	<method signature="boolean endOfInput()" class="org.w3c.tidy.Lexer" />
+	<method signature="org.w3c.tidy.Node parsePhp()" class="org.w3c.tidy.Lexer" />
+	<method signature="void updateNodeTextArrays(byte[],byte[])" class="org.w3c.tidy.Lexer" />
+	<method signature="void changeChar(byte)" class="org.w3c.tidy.Lexer" />
+	<method signature="java.lang.String HTMLVersionName()" class="org.w3c.tidy.Lexer" />
+	<method signature="char foldCase(char,boolean,boolean)" class="org.w3c.tidy.Lexer" />
+	<method signature="org.w3c.tidy.AttVal cloneAttributes(org.w3c.tidy.AttVal)" class="org.w3c.tidy.Lexer" />
+	<method signature="boolean isValidAttrName(java.lang.String)" class="org.w3c.tidy.Lexer" />
+	<method signature="java.lang.String parseValue(java.lang.String,boolean,org.w3c.tidy.MutableBoolean,org.w3c.tidy.MutableInteger)" class="org.w3c.tidy.Lexer" />
+	<method signature="void addCharToLexer(int)" class="org.w3c.tidy.Lexer" />
+	<method signature="org.w3c.tidy.Node newNode()" class="org.w3c.tidy.Lexer" />
+	<method signature="boolean isPushed(org.w3c.tidy.Node)" class="org.w3c.tidy.Lexer" />
+	<method signature="void ungetToken()" class="org.w3c.tidy.Lexer" />
+	<method signature="void popInline(org.w3c.tidy.Node)" class="org.w3c.tidy.Lexer" />
+	<method signature="boolean wsubstr(java.lang.String,java.lang.String)" class="org.w3c.tidy.Lexer" />
+	<method signature="short findGivenVersion(org.w3c.tidy.Node)" class="org.w3c.tidy.Lexer" />
+	<method signature="void deferDup()" class="org.w3c.tidy.Lexer" />
+	<method signature="void pushInline(org.w3c.tidy.Node)" class="org.w3c.tidy.Lexer" />
+	<method signature="org.w3c.tidy.Node parseAsp()" class="org.w3c.tidy.Lexer" />
+	<method signature="java.lang.String parseAttribute(org.w3c.tidy.MutableBoolean,org.w3c.tidy.MutableObject,org.w3c.tidy.MutableObject)" class="org.w3c.tidy.Lexer" />
+	<method signature="void &lt;init&gt;(org.w3c.tidy.StreamIn,org.w3c.tidy.Configuration)" class="org.w3c.tidy.Lexer" />
+	<method signature="void parseEntity(short)" class="org.w3c.tidy.Lexer" />
+	<method signature="org.w3c.tidy.Node insertedToken()" class="org.w3c.tidy.Lexer" />
+	<method signature="char parseTagName()" class="org.w3c.tidy.Lexer" />
+	<field name="columns" class="org.w3c.tidy.Lexer" />
+	<field name="lexsize" class="org.w3c.tidy.Lexer" />
+	<field name="exiled" class="org.w3c.tidy.Lexer" />
+	<field name="IgnoreMarkup" class="org.w3c.tidy.Lexer" />
+	<field name="MixedContent" class="org.w3c.tidy.Lexer" />
+	<field name="errors" class="org.w3c.tidy.Lexer" />
+	<field name="lexbuf" class="org.w3c.tidy.Lexer" />
+	<field name="excludeBlocks" class="org.w3c.tidy.Lexer" />
+	<field name="styles" class="org.w3c.tidy.Lexer" />
+	<field name="txtstart" class="org.w3c.tidy.Lexer" />
+	<field name="errout" class="org.w3c.tidy.Lexer" />
+	<field name="lines" class="org.w3c.tidy.Lexer" />
+	<field name="doctype" class="org.w3c.tidy.Lexer" />
+	<field name="badDoctype" class="org.w3c.tidy.Lexer" />
+	<field name="state" class="org.w3c.tidy.Lexer" />
+	<field name="badChars" class="org.w3c.tidy.Lexer" />
+	<field name="badAccess" class="org.w3c.tidy.Lexer" />
+	<field name="waswhite" class="org.w3c.tidy.Lexer" />
+	<field name="istackbase" class="org.w3c.tidy.Lexer" />
+	<field name="token" class="org.w3c.tidy.Lexer" />
+	<field name="IgnoreWhitespace" class="org.w3c.tidy.Lexer" />
+	<field name="isvoyager" class="org.w3c.tidy.Lexer" />
+	<field name="warnings" class="org.w3c.tidy.Lexer" />
+	<field name="badLayout" class="org.w3c.tidy.Lexer" />
+	<field name="in" class="org.w3c.tidy.Lexer" />
+	<field name="seenBodyEndTag" class="org.w3c.tidy.Lexer" />
+	<field name="versions" class="org.w3c.tidy.Lexer" />
+	<field name="lexlength" class="org.w3c.tidy.Lexer" />
+	<field name="txtend" class="org.w3c.tidy.Lexer" />
+	<field name="pushed" class="org.w3c.tidy.Lexer" />
+	<field name="insertspace" class="org.w3c.tidy.Lexer" />
+	<field name="Preformatted" class="org.w3c.tidy.Lexer" />
+	<field name="badForm" class="org.w3c.tidy.Lexer" />
+	<field name="insert" class="org.w3c.tidy.Lexer" />
+	<field name="configuration" class="org.w3c.tidy.Lexer" />
+	<field name="inode" class="org.w3c.tidy.Lexer" />
+	<field name="istack" class="org.w3c.tidy.Lexer" />
+	<class name="org.w3c.tidy.CheckAttribsImpl$CheckAREA" />
+	<method signature="void check(org.w3c.tidy.Lexer,org.w3c.tidy.Node)" class="org.w3c.tidy.CheckAttribsImpl$CheckAREA" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.CheckAttribsImpl$CheckAREA" />
+	<class name="org.w3c.tidy.StreamIn" />
+	<method signature="void ungetChar(int)" class="org.w3c.tidy.StreamIn" />
+	<method signature="int readChar()" class="org.w3c.tidy.StreamIn" />
+	<method signature="int readCharFromStream()" class="org.w3c.tidy.StreamIn" />
+	<method signature="boolean isEndOfStream()" class="org.w3c.tidy.StreamIn" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.StreamIn" />
+	<field name="lexer" class="org.w3c.tidy.StreamIn" />
+	<field name="stream" class="org.w3c.tidy.StreamIn" />
+	<field name="curcol" class="org.w3c.tidy.StreamIn" />
+	<field name="endOfStream" class="org.w3c.tidy.StreamIn" />
+	<field name="FSM_ESCD" class="org.w3c.tidy.StreamIn" />
+	<field name="c" class="org.w3c.tidy.StreamIn" />
+	<field name="state" class="org.w3c.tidy.StreamIn" />
+	<field name="FSM_ESCDP" class="org.w3c.tidy.StreamIn" />
+	<field name="FSM_ESC" class="org.w3c.tidy.StreamIn" />
+	<field name="FSM_NONASCII" class="org.w3c.tidy.StreamIn" />
+	<field name="FSM_ESCP" class="org.w3c.tidy.StreamIn" />
+	<field name="EndOfStream" class="org.w3c.tidy.StreamIn" />
+	<field name="curline" class="org.w3c.tidy.StreamIn" />
+	<field name="encoding" class="org.w3c.tidy.StreamIn" />
+	<field name="FSM_ASCII" class="org.w3c.tidy.StreamIn" />
+	<field name="pushed" class="org.w3c.tidy.StreamIn" />
+	<field name="tabsize" class="org.w3c.tidy.StreamIn" />
+	<field name="lastcol" class="org.w3c.tidy.StreamIn" />
+	<field name="tabs" class="org.w3c.tidy.StreamIn" />
+	<class name="org.w3c.tidy.DOMNodeListImpl" />
+	<method signature="void &lt;init&gt;(org.w3c.tidy.Node)" class="org.w3c.tidy.DOMNodeListImpl" />
+	<method signature="org.w3c.dom.Node item(int)" class="org.w3c.tidy.DOMNodeListImpl" />
+	<method signature="int getLength()" class="org.w3c.tidy.DOMNodeListImpl" />
+	<class name="org.w3c.tidy.DOMProcessingInstructionImpl" />
+	<method signature="void &lt;init&gt;(org.w3c.tidy.Node)" class="org.w3c.tidy.DOMProcessingInstructionImpl" />
+	<method signature="void setData(java.lang.String)" class="org.w3c.tidy.DOMProcessingInstructionImpl" />
+	<method signature="java.lang.String getData()" class="org.w3c.tidy.DOMProcessingInstructionImpl" />
+	<method signature="java.lang.String getTarget()" class="org.w3c.tidy.DOMProcessingInstructionImpl" />
+	<method signature="short getNodeType()" class="org.w3c.tidy.DOMProcessingInstructionImpl" />
+	<class name="org.w3c.tidy.DOMExceptionImpl" />
+	<method signature="void &lt;init&gt;(short,java.lang.String)" class="org.w3c.tidy.DOMExceptionImpl" />
+	<class name="org.w3c.tidy.StreamInImpl" />
+	<method signature="void ungetChar(int)" class="org.w3c.tidy.StreamInImpl" />
+	<method signature="int readChar()" class="org.w3c.tidy.StreamInImpl" />
+	<method signature="int readCharFromStream()" class="org.w3c.tidy.StreamInImpl" />
+	<method signature="boolean isEndOfStream()" class="org.w3c.tidy.StreamInImpl" />
+	<method signature="void &lt;init&gt;(java.io.InputStream,int,int)" class="org.w3c.tidy.StreamInImpl" />
+	<class name="org.w3c.tidy.ParserImpl$ParseText" />
+	<method signature="void parse(org.w3c.tidy.Lexer,org.w3c.tidy.Node,short)" class="org.w3c.tidy.ParserImpl$ParseText" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.ParserImpl$ParseText" />
+	<class name="org.w3c.tidy.OutImpl" />
+	<method signature="void outc(byte)" class="org.w3c.tidy.OutImpl" />
+	<method signature="void outc(int)" class="org.w3c.tidy.OutImpl" />
+	<method signature="void newline()" class="org.w3c.tidy.OutImpl" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.OutImpl" />
+	<class name="org.w3c.tidy.CheckAttribs" />
+	<method signature="void check(org.w3c.tidy.Lexer,org.w3c.tidy.Node)" class="org.w3c.tidy.CheckAttribs" />
+	<class name="org.w3c.tidy.Tidy" />
+	<method signature="void setTidyMark(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="void setIndentContent(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getRawOut()" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getWrapAsp()" class="org.w3c.tidy.Tidy" />
+	<method signature="int getSpaces()" class="org.w3c.tidy.Tidy" />
+	<method signature="void setOnlyErrors(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="void setSpaces(int)" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getQuoteNbsp()" class="org.w3c.tidy.Tidy" />
+	<method signature="int getParseErrors()" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getXHTML()" class="org.w3c.tidy.Tidy" />
+	<method signature="void setErrout(java.io.PrintWriter)" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getXmlOut()" class="org.w3c.tidy.Tidy" />
+	<method signature="void setWraplen(int)" class="org.w3c.tidy.Tidy" />
+	<method signature="int getTabsize()" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getIndentAttributes()" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getWrapSection()" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getBreakBeforeBR()" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getDropFontTags()" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getWrapPhp()" class="org.w3c.tidy.Tidy" />
+	<method signature="void setLogicalEmphasis(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="void setWrapJste(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getXmlSpace()" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getEmacs()" class="org.w3c.tidy.Tidy" />
+	<method signature="void setBreakBeforeBR(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getLogicalEmphasis()" class="org.w3c.tidy.Tidy" />
+	<method signature="void setFixBackslash(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="org.w3c.tidy.Node parse(java.io.InputStream,java.io.OutputStream)" class="org.w3c.tidy.Tidy" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getXmlTags()" class="org.w3c.tidy.Tidy" />
+	<method signature="java.lang.String getSlidestyle()" class="org.w3c.tidy.Tidy" />
+	<method signature="void setInputStreamName(java.lang.String)" class="org.w3c.tidy.Tidy" />
+	<method signature="void pprint(org.w3c.dom.Document,java.io.OutputStream)" class="org.w3c.tidy.Tidy" />
+	<method signature="void setXmlTags(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="java.lang.String getAltText()" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getWriteback()" class="org.w3c.tidy.Tidy" />
+	<method signature="void setAltText(java.lang.String)" class="org.w3c.tidy.Tidy" />
+	<method signature="org.w3c.dom.Document createEmptyDocument()" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getKeepFileTimes()" class="org.w3c.tidy.Tidy" />
+	<method signature="void setDocType(java.lang.String)" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getWrapScriptlets()" class="org.w3c.tidy.Tidy" />
+	<method signature="void setHideEndTags(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getQuoteAmpersand()" class="org.w3c.tidy.Tidy" />
+	<method signature="void setNumEntities(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="java.io.PrintWriter getErrout()" class="org.w3c.tidy.Tidy" />
+	<method signature="void setXmlPi(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="void setSlidestyle(java.lang.String)" class="org.w3c.tidy.Tidy" />
+	<method signature="void setXmlPIs(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="void setShowWarnings(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="void setWrapSection(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getWrapJste()" class="org.w3c.tidy.Tidy" />
+	<method signature="void setTabsize(int)" class="org.w3c.tidy.Tidy" />
+	<method signature="int getCharEncoding()" class="org.w3c.tidy.Tidy" />
+	<method signature="void setWriteback(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="int getWraplen()" class="org.w3c.tidy.Tidy" />
+	<method signature="void setDropEmptyParas(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getOnlyErrors()" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getMakeClean()" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getIndentContent()" class="org.w3c.tidy.Tidy" />
+	<method signature="void setDropFontTags(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getWord2000()" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getQuoteMarks()" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getQuiet()" class="org.w3c.tidy.Tidy" />
+	<method signature="void setErrfile(java.lang.String)" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getTidyMark()" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getXmlPIs()" class="org.w3c.tidy.Tidy" />
+	<method signature="void setXHTML(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="void setWord2000(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="void setWrapAsp(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getNumEntities()" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getUpperCaseAttrs()" class="org.w3c.tidy.Tidy" />
+	<method signature="void setWrapScriptlets(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="void setXmlSpace(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getBurstSlides()" class="org.w3c.tidy.Tidy" />
+	<method signature="void setWrapPhp(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="void setUpperCaseAttrs(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getWrapAttVals()" class="org.w3c.tidy.Tidy" />
+	<method signature="void setLiteralAttribs(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="void setQuiet(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getFixComments()" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getEncloseBlockText()" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getFixBackslash()" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getEncloseText()" class="org.w3c.tidy.Tidy" />
+	<method signature="void setXmlOut(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getDropEmptyParas()" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getHideEndTags()" class="org.w3c.tidy.Tidy" />
+	<method signature="void setSmartIndent(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getUpperCaseTags()" class="org.w3c.tidy.Tidy" />
+	<method signature="int getParseWarnings()" class="org.w3c.tidy.Tidy" />
+	<method signature="void main(java.lang.String[])" class="org.w3c.tidy.Tidy" />
+	<method signature="void setCharEncoding(int)" class="org.w3c.tidy.Tidy" />
+	<method signature="void setKeepFileTimes(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getXmlPi()" class="org.w3c.tidy.Tidy" />
+	<method signature="void setWrapAttVals(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="void setUpperCaseTags(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="org.w3c.tidy.Configuration getConfiguration()" class="org.w3c.tidy.Tidy" />
+	<method signature="java.lang.String getInputStreamName()" class="org.w3c.tidy.Tidy" />
+	<method signature="void setMakeClean(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="void setEncloseBlockText(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getSmartIndent()" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getLiteralAttribs()" class="org.w3c.tidy.Tidy" />
+	<method signature="void setEncloseText(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="void setQuoteMarks(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="void setFixComments(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="void setIndentAttributes(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="java.lang.String getDocType()" class="org.w3c.tidy.Tidy" />
+	<method signature="void setEmacs(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="void setQuoteNbsp(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="void setRawOut(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="void setQuoteAmpersand(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="java.io.PrintWriter getStderr()" class="org.w3c.tidy.Tidy" />
+	<method signature="void setConfigurationFromProps(java.util.Properties)" class="org.w3c.tidy.Tidy" />
+	<method signature="void setBurstSlides(boolean)" class="org.w3c.tidy.Tidy" />
+	<method signature="void setConfigurationFromFile(java.lang.String)" class="org.w3c.tidy.Tidy" />
+	<method signature="org.w3c.dom.Document parseDOM(java.io.InputStream,java.io.OutputStream)" class="org.w3c.tidy.Tidy" />
+	<method signature="java.lang.String getErrfile()" class="org.w3c.tidy.Tidy" />
+	<method signature="boolean getShowWarnings()" class="org.w3c.tidy.Tidy" />
+	<class name="org.w3c.tidy.MutableBoolean" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.MutableBoolean" />
+	<field name="value" class="org.w3c.tidy.MutableBoolean" />
+	<class name="org.w3c.tidy.ParserImpl$ParseScript" />
+	<method signature="void parse(org.w3c.tidy.Lexer,org.w3c.tidy.Node,short)" class="org.w3c.tidy.ParserImpl$ParseScript" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.ParserImpl$ParseScript" />
+	<class name="org.w3c.tidy.ParserImpl$ParseTableTag" />
+	<method signature="void parse(org.w3c.tidy.Lexer,org.w3c.tidy.Node,short)" class="org.w3c.tidy.ParserImpl$ParseTableTag" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.ParserImpl$ParseTableTag" />
+	<class name="org.w3c.tidy.Node" />
+	<method signature="void trimInitialSpace(org.w3c.tidy.Lexer,org.w3c.tidy.Node,org.w3c.tidy.Node)" class="org.w3c.tidy.Node" />
+	<method signature="void checkUniqueAttributes(org.w3c.tidy.Lexer)" class="org.w3c.tidy.Node" />
+	<method signature="java.lang.String toString()" class="org.w3c.tidy.Node" />
+	<method signature="org.w3c.tidy.Node discardElement(org.w3c.tidy.Node)" class="org.w3c.tidy.Node" />
+	<method signature="void trimEmptyElement(org.w3c.tidy.Lexer,org.w3c.tidy.Node)" class="org.w3c.tidy.Node" />
+	<method signature="void addAttribute(java.lang.String,java.lang.String)" class="org.w3c.tidy.Node" />
+	<method signature="void &lt;init&gt;(short,byte[],int,int)" class="org.w3c.tidy.Node" />
+	<method signature="void discardDocType()" class="org.w3c.tidy.Node" />
+	<method signature="void removeAttribute(org.w3c.tidy.AttVal)" class="org.w3c.tidy.Node" />
+	<method signature="void insertNodeAtStart(org.w3c.tidy.Node,org.w3c.tidy.Node)" class="org.w3c.tidy.Node" />
+	<method signature="boolean insertMisc(org.w3c.tidy.Node,org.w3c.tidy.Node)" class="org.w3c.tidy.Node" />
+	<method signature="void addClass(org.w3c.tidy.Node,java.lang.String)" class="org.w3c.tidy.Node" />
+	<method signature="org.w3c.dom.Node getAdapter()" class="org.w3c.tidy.Node" />
+	<method signature="org.w3c.tidy.AttVal getAttrByName(java.lang.String)" class="org.w3c.tidy.Node" />
+	<method signature="void moveBeforeTable(org.w3c.tidy.Node,org.w3c.tidy.Node,org.w3c.tidy.TagTable)" class="org.w3c.tidy.Node" />
+	<method signature="void insertNodeBeforeElement(org.w3c.tidy.Node,org.w3c.tidy.Node)" class="org.w3c.tidy.Node" />
+	<method signature="void setType(short)" class="org.w3c.tidy.Node" />
+	<method signature="void trimSpaces(org.w3c.tidy.Lexer,org.w3c.tidy.Node)" class="org.w3c.tidy.Node" />
+	<method signature="void coerceNode(org.w3c.tidy.Lexer,org.w3c.tidy.Node,org.w3c.tidy.Dict)" class="org.w3c.tidy.Node" />
+	<method signature="boolean hasOneChild()" class="org.w3c.tidy.Node" />
+	<method signature="void removeNode(org.w3c.tidy.Node)" class="org.w3c.tidy.Node" />
+	<method signature="boolean checkNodeIntegrity()" class="org.w3c.tidy.Node" />
+	<method signature="boolean isNewNode(org.w3c.tidy.Node)" class="org.w3c.tidy.Node" />
+	<method signature="boolean isElement()" class="org.w3c.tidy.Node" />
+	<method signature="java.lang.Object clone()" class="org.w3c.tidy.Node" />
+	<method signature="org.w3c.tidy.Node cloneNode(boolean)" class="org.w3c.tidy.Node" />
+	<method signature="void checkAttributes(org.w3c.tidy.Lexer)" class="org.w3c.tidy.Node" />
+	<method signature="org.w3c.tidy.Node findBody(org.w3c.tidy.TagTable)" class="org.w3c.tidy.Node" />
+	<method signature="org.w3c.tidy.Node findHTML(org.w3c.tidy.TagTable)" class="org.w3c.tidy.Node" />
+	<method signature="void insertNodeAtEnd(org.w3c.tidy.Node,org.w3c.tidy.Node)" class="org.w3c.tidy.Node" />
+	<method signature="void &lt;init&gt;(short,byte[],int,int,java.lang.String,org.w3c.tidy.TagTable)" class="org.w3c.tidy.Node" />
+	<method signature="boolean isDescendantOf(org.w3c.tidy.Dict)" class="org.w3c.tidy.Node" />
+	<method signature="void insertDocType(org.w3c.tidy.Lexer,org.w3c.tidy.Node,org.w3c.tidy.Node)" class="org.w3c.tidy.Node" />
+	<method signature="void trimTrailingSpace(org.w3c.tidy.Lexer,org.w3c.tidy.Node,org.w3c.tidy.Node)" class="org.w3c.tidy.Node" />
+	<method signature="void insertNodeAsParent(org.w3c.tidy.Node,org.w3c.tidy.Node)" class="org.w3c.tidy.Node" />
+	<method signature="org.w3c.tidy.Node findDocType()" class="org.w3c.tidy.Node" />
+	<method signature="org.w3c.tidy.Node findHEAD(org.w3c.tidy.TagTable)" class="org.w3c.tidy.Node" />
+	<method signature="void insertNodeAfterElement(org.w3c.tidy.Node,org.w3c.tidy.Node)" class="org.w3c.tidy.Node" />
+	<method signature="void fixEmptyRow(org.w3c.tidy.Lexer,org.w3c.tidy.Node)" class="org.w3c.tidy.Node" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.Node" />
+	<field name="SectionTag" class="org.w3c.tidy.Node" />
+	<field name="last" class="org.w3c.tidy.Node" />
+	<field name="tag" class="org.w3c.tidy.Node" />
+	<field name="linebreak" class="org.w3c.tidy.Node" />
+	<field name="next" class="org.w3c.tidy.Node" />
+	<field name="implicit" class="org.w3c.tidy.Node" />
+	<field name="CDATATag" class="org.w3c.tidy.Node" />
+	<field name="type" class="org.w3c.tidy.Node" />
+	<field name="was" class="org.w3c.tidy.Node" />
+	<field name="AspTag" class="org.w3c.tidy.Node" />
+	<field name="ProcInsTag" class="org.w3c.tidy.Node" />
+	<field name="textarray" class="org.w3c.tidy.Node" />
+	<field name="closed" class="org.w3c.tidy.Node" />
+	<field name="CommentTag" class="org.w3c.tidy.Node" />
+	<field name="end" class="org.w3c.tidy.Node" />
+	<field name="PhpTag" class="org.w3c.tidy.Node" />
+	<field name="EndTag" class="org.w3c.tidy.Node" />
+	<field name="element" class="org.w3c.tidy.Node" />
+	<field name="JsteTag" class="org.w3c.tidy.Node" />
+	<field name="StartEndTag" class="org.w3c.tidy.Node" />
+	<field name="parent" class="org.w3c.tidy.Node" />
+	<field name="adapter" class="org.w3c.tidy.Node" />
+	<field name="StartTag" class="org.w3c.tidy.Node" />
+	<field name="prev" class="org.w3c.tidy.Node" />
+	<field name="content" class="org.w3c.tidy.Node" />
+	<field name="DocTypeTag" class="org.w3c.tidy.Node" />
+	<field name="start" class="org.w3c.tidy.Node" />
+	<field name="RootNode" class="org.w3c.tidy.Node" />
+	<field name="TextNode" class="org.w3c.tidy.Node" />
+	<field name="attributes" class="org.w3c.tidy.Node" />
+	<class name="org.w3c.tidy.ParserImpl$ParseNoFrames" />
+	<method signature="void parse(org.w3c.tidy.Lexer,org.w3c.tidy.Node,short)" class="org.w3c.tidy.ParserImpl$ParseNoFrames" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.ParserImpl$ParseNoFrames" />
+	<class name="org.w3c.tidy.TidyBeanInfo" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.TidyBeanInfo" />
+	<method signature="java.awt.Image getIcon(int)" class="org.w3c.tidy.TidyBeanInfo" />
+	<class name="org.w3c.tidy.ParserImpl$ParseDefList" />
+	<method signature="void parse(org.w3c.tidy.Lexer,org.w3c.tidy.Node,short)" class="org.w3c.tidy.ParserImpl$ParseDefList" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.ParserImpl$ParseDefList" />
+	<class name="org.w3c.tidy.AttrCheckImpl$CheckScript" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.AttrCheckImpl$CheckScript" />
+	<method signature="void check(org.w3c.tidy.Lexer,org.w3c.tidy.Node,org.w3c.tidy.AttVal)" class="org.w3c.tidy.AttrCheckImpl$CheckScript" />
+	<class name="org.w3c.tidy.ParserImpl$ParseBlock" />
+	<method signature="void parse(org.w3c.tidy.Lexer,org.w3c.tidy.Node,short)" class="org.w3c.tidy.ParserImpl$ParseBlock" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.ParserImpl$ParseBlock" />
+	<class name="org.w3c.tidy.CheckAttribsImpl$CheckSCRIPT" />
+	<method signature="void check(org.w3c.tidy.Lexer,org.w3c.tidy.Node)" class="org.w3c.tidy.CheckAttribsImpl$CheckSCRIPT" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.CheckAttribsImpl$CheckSCRIPT" />
+	<class name="org.w3c.tidy.CheckAttribsImpl$CheckTableCell" />
+	<method signature="void check(org.w3c.tidy.Lexer,org.w3c.tidy.Node)" class="org.w3c.tidy.CheckAttribsImpl$CheckTableCell" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.CheckAttribsImpl$CheckTableCell" />
+	<class name="org.w3c.tidy.ParserImpl$ParseHTML" />
+	<method signature="void parse(org.w3c.tidy.Lexer,org.w3c.tidy.Node,short)" class="org.w3c.tidy.ParserImpl$ParseHTML" />
+	<method signature="void &lt;init&gt;()" class="org.w3c.tidy.ParserImpl$ParseHTML" />
+	<class name="org.w3c.tidy.PPrint" />
+	<method signature="void printTree(org.w3c.tidy.Out,short,int,org.w3c.tidy.Lexer,org.w3c.tidy.Node)" class="org.w3c.tidy.PPrint" />
+	<method signature="void printSlide(org.w3c.tidy.Out,short,int,org.w3c.tidy.Lexer)" class="org.w3c.tidy.PPrint" />
+	<method signature="void &lt;init&gt;(org.w3c.tidy.Configuration)" class="org.w3c.tidy.PPrint" />
+	<method signature="void condFlushLine(org.w3c.tidy.Out,int)" class="org.w3c.tidy.PPrint" />
+	<method signature="void flushLine(org.w3c.tidy.Out,int)" class="org.w3c.tidy.PPrint" />
+	<method signature="void createSlides(org.w3c.tidy.Lexer,org.w3c.tidy.Node)" class="org.w3c.tidy.PPrint" />
+	<method signature="int countSlides(org.w3c.tidy.Node)" class="org.w3c.tidy.PPrint" />
+	<method signature="void addTransitionEffect(org.w3c.tidy.Lexer,org.w3c.tidy.Node,short,double)" class="org.w3c.tidy.PPrint" />
+	<method signature="void printXMLTree(org.w3c.tidy.Out,short,int,org.w3c.tidy.Lexer,org.w3c.tidy.Node)" class="org.w3c.tidy.PPrint" />
+	<method signature="int putUTF8(byte[],int,int)" class="org.w3c.tidy.PPrint" />
+	<method signature="int getUTF8(byte[],int,org.w3c.tidy.MutableInteger)" class="org.w3c.tidy.PPrint" />
+	<field name="EFFECT_CHK_DOWN" class="org.w3c.tidy.PPrint" />
+	<field name="EFFECT_CIRCLE_IN" class="org.w3c.tidy.PPrint" />
+	<field name="EFFECT_STRIPS_RIGHT_DOWN" class="org.w3c.tidy.PPrint" />
+	<field name="EFFECT_WIPE_DOWN" class="org.w3c.tidy.PPrint" />
+	<field name="EFFECT_SPLIT_HORZ_IN" class="org.w3c.tidy.PPrint" />
+	<field name="EFFECT_STRIPS_LEFT_DOWN" class="org.w3c.tidy.PPrint" />
+	<field name="EFFECT_RND_DISSOLVE" class="org.w3c.tidy.PPrint" />
+	<field name="EFFECT_BLEND" class="org.w3c.tidy.PPrint" />
+	<field name="EFFECT_STRIPS_RIGHT_UP" class="org.w3c.tidy.PPrint" />
+	<field name="EFFECT_SPLIT_HORZ_OUT" class="org.w3c.tidy.PPrint" />
+	<field name="EFFECT_BOX_OUT" class="org.w3c.tidy.PPrint" />
+	<field name="EFFECT_CHK_ACROSS" class="org.w3c.tidy.PPrint" />
+	<field name="EFFECT_WIPE_LEFT" class="org.w3c.tidy.PPrint" />
+	<field name="EFFECT_BOX_IN" class="org.w3c.tidy.PPrint" />
+	<field name="EFFECT_WIPE_RIGHT" class="org.w3c.tidy.PPrint" />
+	<field name="EFFECT_RND_BARS_VERT" class="org.w3c.tidy.PPrint" />
+	<field name="EFFECT_HORZ_BLINDS" class="org.w3c.tidy.PPrint" />
+	<field name="EFFECT_RANDOM" class="org.w3c.tidy.PPrint" />
+	<field name="EFFECT_SPLIT_VIRT_OUT" class="org.w3c.tidy.PPrint" />
+	<field name="EFFECT_STRIPS_LEFT_UP" class="org.w3c.tidy.PPrint" />
+	<field name="EFFECT_RND_BARS_HORZ" class="org.w3c.tidy.PPrint" />
+	<field name="EFFECT_VERT_BLINDS" class="org.w3c.tidy.PPrint" />
+	<field name="EFFECT_CIRCLE_OUT" class="org.w3c.tidy.PPrint" />
+	<field name="EFFECT_WIPE_UP" class="org.w3c.tidy.PPrint" />
+	<field name="EFFECT_SPLIT_VIRT_IN" class="org.w3c.tidy.PPrint" />
+</entrypoints>
+
+<!-- writing shrinked C:\jcodes\dev\appservers\ecims\lib\ext\Tidy.jar to C:\jcodes\dev\appservers\ecims\lib\ext\Tidy1.jar. -->
+<inOutPair in="C:\jcodes\dev\appservers\ecims\lib\ext\Tidy.jar" out="C:\jcodes\dev\appservers\ecims\lib\ext\Tidy1.jar">
+	<removed-code>
+		<field name="DIGIT" class="org.w3c.tidy.Lexer" />
+		<field name="LETTER" class="org.w3c.tidy.Lexer" />
+		<field name="NAMECHAR" class="org.w3c.tidy.Lexer" />
+		<field name="WHITE" class="org.w3c.tidy.Lexer" />
+		<field name="NEWLINE" class="org.w3c.tidy.Lexer" />
+		<field name="LOWERCASE" class="org.w3c.tidy.Lexer" />
+		<field name="UPPERCASE" class="org.w3c.tidy.Lexer" />
+		<field name="LEX_CONTENT" class="org.w3c.tidy.Lexer" />
+		<field name="LEX_GT" class="org.w3c.tidy.Lexer" />
+		<field name="LEX_ENDTAG" class="org.w3c.tidy.Lexer" />
+		<field name="LEX_STARTTAG" class="org.w3c.tidy.Lexer" />
+		<field name="LEX_COMMENT" class="org.w3c.tidy.Lexer" />
+		<field name="LEX_DOCTYPE" class="org.w3c.tidy.Lexer" />
+		<field name="LEX_PROCINSTR" class="org.w3c.tidy.Lexer" />
+		<field name="LEX_ENDCOMMENT" class="org.w3c.tidy.Lexer" />
+		<field name="LEX_CDATA" class="org.w3c.tidy.Lexer" />
+		<field name="LEX_SECTION" class="org.w3c.tidy.Lexer" />
+		<field name="LEX_ASP" class="org.w3c.tidy.Lexer" />
+		<field name="LEX_JSTE" class="org.w3c.tidy.Lexer" />
+		<field name="LEX_PHP" class="org.w3c.tidy.Lexer" />
+		<field name="voyager_loose" class="org.w3c.tidy.Lexer" />
+		<field name="voyager_strict" class="org.w3c.tidy.Lexer" />
+		<field name="voyager_frameset" class="org.w3c.tidy.Lexer" />
+		<field name="XHTML_NAMESPACE" class="org.w3c.tidy.Lexer" />
+		<method signature="boolean isDigit(char)" class="org.w3c.tidy.Lexer" />
+		<method signature="boolean isLetter(char)" class="org.w3c.tidy.Lexer" />
+		<method signature="boolean isWhite(char)" class="org.w3c.tidy.Lexer" />
+		<method signature="char toUpper(char)" class="org.w3c.tidy.Lexer" />
+		<field name="NORMAL" class="org.w3c.tidy.PPrint" />
+		<field name="PREFORMATTED" class="org.w3c.tidy.PPrint" />
+		<field name="COMMENT" class="org.w3c.tidy.PPrint" />
+		<field name="ATTRIBVALUE" class="org.w3c.tidy.PPrint" />
+		<field name="NOWRAP" class="org.w3c.tidy.PPrint" />
+		<field name="CDATA" class="org.w3c.tidy.PPrint" />
+		<method signature="void printVertSpacer(org.w3c.tidy.Out,int)" class="org.w3c.tidy.PPrint" />
+		<field name="serialVersionUID" class="org.w3c.tidy.Tidy" />
+	</removed-code>
+	<removed-resources>
+	</removed-resources>
+<!-- 	shrinked C:\jcodes\dev\appservers\ecims\lib\ext\Tidy.jar BY 19.98%. -->
+<!-- 	size before: 157 KB, size after: 126 KB. -->
+<!-- 	removed 0 classes, 5 methods, 31 fields, 0 resources. -->
+<!-- 	84 classes remaining of 84 total. -->
+</inOutPair>
+</yshrink>
+
